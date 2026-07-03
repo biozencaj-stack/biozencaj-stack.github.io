@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Flow</title>
+    <g id="Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10,13 L10,37 L40,37 L40,39 L8,39 L8,13 L10,13 Z" id="Combined-Shape" fill="#007CFF" opacity="0.300000012"></path>
+        <path d="M16,31 L16,37 L18,37 L18,31 L16,31 Z M14,29 L20,29 L20,37 L14,37 L14,29 Z M24,23 L24,37 L26,37 L26,23 L24,23 Z M22,21 L28,21 L28,37 L22,37 L22,21 Z M32,17 L32,37 L34,37 L34,17 L32,17 Z M30,15 L36,15 L36,37 L30,37 L30,15 Z" id="Combined-Shape" fill="#007CFF" fill-rule="nonzero"></path>
+    </g>
+</svg>
