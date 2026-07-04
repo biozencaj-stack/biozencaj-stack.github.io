@@ -447,3 +447,6 @@ html,body{overflow-x:hidden;overflow-x:clip}
 .prose-just p{text-align:justify;hyphens:auto}
 .hero-tight{padding-bottom:36px}
 .f-logo{display:block;margin-bottom:12px}
+
+.info-card dt{display:flex;align-items:center;gap:9px}
+.info-card dt img{flex:0 0 auto;opacity:.85}
