@@ -23,7 +23,8 @@
 <meta name="twitter:image" content="https://izradawebsajta.co/images/og-default.png"/>
 <meta name="theme-color" content="#ffffff"/>
 <link rel="icon" href="/favicon.ico" sizes="any"/>
-<link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png"/>
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 <style>@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/inter-latin.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
 @font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/inter-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
@@ -44,13 +45,13 @@
   --r-card:18px;
   --r-pill:980px;
   --font:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
+;--accent:#333477;--accent-hover:#41439a}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{font-family:var(--font);font-size:17px;line-height:1.6;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip}
 img{max-width:100%;height:auto;display:block}
-a{color:var(--blue);text-decoration:none}
+a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 ul,ol{list-style:none}
 button{font:inherit;cursor:pointer;background:none;border:none}
@@ -86,7 +87,7 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .sub-link img{width:24px;height:24px;flex:none}
 .sub-link small{display:block;font-size:12px;color:var(--ink-2);font-weight:400}
 .sub-link b{font-weight:600}
-.sub-all{display:block;text-align:center;padding:11px 12px 7px;margin-top:6px;border-top:1px solid #e8e8ed;font-size:13px;font-weight:600;color:var(--blue) !important}
+.sub-all{display:block;text-align:center;padding:11px 12px 7px;margin-top:6px;border-top:1px solid #e8e8ed;font-size:13px;font-weight:600;color:var(--accent) !important}
 .orb{position:fixed;right:20px;bottom:20px;z-index:70;display:flex;align-items:center;justify-content:center;gap:0;height:58px;width:58px;border-radius:99px;color:#fff;overflow:hidden;white-space:nowrap;
   background:linear-gradient(135deg,#0a84ff 0%,#7d5cff 45%,#bf5af2 70%,#ff375f 110%);
   box-shadow:0 12px 36px rgba(125,92,255,.45);
@@ -117,7 +118,7 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .m-nav.open{display:block}
 .m-nav a{display:block;padding:13px 2px;font-size:17px;color:var(--ink);border-bottom:1px solid #e8e8ed}
 .m-nav a:hover{text-decoration:none;color:var(--blue)}
-.m-nav .m-cta{margin-top:16px;text-align:center;background:var(--blue);color:#fff;border-radius:12px;border-bottom:none;font-weight:600}
+.m-nav .m-cta{margin-top:16px;text-align:center;background:var(--accent);color:#fff;border-radius:12px;border-bottom:none;font-weight:600}
 @media (max-width:980px){
   .nav-links,.nav-lang,.nav .nav-cta{display:none}
   .nav-burger{display:block}
@@ -182,8 +183,8 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .btn:hover{transform:translateY(-2px)}
 .btn:active{transform:translateY(0) scale(.98)}
 .btn:hover{text-decoration:none}
-.btn-primary{background:var(--blue);color:#fff}
-.btn-primary:hover{background:var(--blue-hover)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-hover)}
 .btn-ghost{color:var(--blue);border:1px solid var(--blue)}
 .btn-ghost:hover{background:var(--blue);color:#fff}
 .sec-dark .btn-ghost{color:var(--blue-dark-bg);border-color:var(--blue-dark-bg)}
@@ -253,7 +254,7 @@ a.shot-card:hover{text-decoration:none}
 .sec-alt .logo-cell{background:#fff}
 .logo-cell img{width:38px;height:38px}
 .logo-cell span{font-size:.75rem;font-weight:500;color:var(--ink-2)}
-.hero-tag{font-size:clamp(2rem,5.2vw,3.4rem);font-weight:800;letter-spacing:-.025em;line-height:1.06}
+.hero-tag{margin:50px 0;font-size:clamp(2rem,5.2vw,3.4rem);font-weight:800;letter-spacing:-.025em;line-height:1.06}
 .steps{position:relative}
 .steps.reveal{opacity:1;transform:none}
 .steps::before{content:"";position:absolute;left:12.5%;right:12.5%;top:27px;height:2px;border-radius:2px;background:linear-gradient(90deg,#0a84ff,#7d5cff 40%,#bf5af2 70%,#ff375f);opacity:.3;transform:scaleX(0);transform-origin:left;transition:transform 1.3s cubic-bezier(.25,.1,.25,1) .2s}
@@ -393,7 +394,16 @@ html,body{overflow-x:hidden;overflow-x:clip}
 .m-sub span{display:flex;flex-direction:column;line-height:1.35}
 .m-sub b{font-weight:600;font-size:15.5px}
 .m-sub small{font-size:12.5px;color:var(--ink-2)}
-@media (max-width:640px){.prevnext{flex-direction:column;gap:10px;align-items:flex-start}}</style>
+@media (max-width:640px){.prevnext{flex-direction:column;gap:10px;align-items:flex-start}}
+.tile-ico{display:inline-flex;align-items:center;justify-content:center;width:68px;height:68px;border-radius:17px;background:rgba(51,52,119,.09);color:var(--accent);margin-bottom:20px}
+.tile-dark .tile-ico{background:rgba(255,255,255,.1);color:#8ec2ff}
+.tile-blue .tile-ico{background:rgba(255,255,255,.14);color:#fff}
+.sec-blue{background:linear-gradient(160deg,#3572b8 0%,#2c4a97 45%,#263173 100%);color:#f5f5f7}
+.sec-blue h2,.sec-blue h3,.sec-blue .stat b{color:#fff}
+.sec-blue .stat span{color:#cfd8f2}
+.prose-just p{text-align:justify;hyphens:auto}
+.hero-tight{padding-bottom:36px}
+.f-logo{display:block;margin-bottom:12px}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://izradawebsajta.co/en/"},{"@type":"ListItem","position":2,"name":"Portfolio","item":"https://izradawebsajta.co/en/portfolio/"},{"@type":"ListItem","position":3,"name":"Planika","item":"https://izradawebsajta.co/en/portfolio/planika/"}]}</script>
 <script src="/assets/js/site.js" defer></script>
@@ -402,7 +412,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <a class="skip-link" href="#content">Skip to content</a>
 <header class="nav">
 <div class="nav-inner">
-<a class="brand" href="/en/" aria-label="IzradaWebSajta.co — home"><img src="/images/logo.svg" alt="IzradaWebSajta.co logo" width="32" height="32"/></a>
+<a class="brand" href="/en/" aria-label="IzradaWebSajta.co — home"><img src="/images/logo-4.png" alt="IzradaWebSajta.co logo" width="32" height="32"/></a>
 <nav class="nav-links" aria-label="Main navigation"><div class="has-sub"><a href="/en/services/">Services</a><div class="sub-menu"><div class="sub-inner"><a class="sub-link" href="/en/services/"><img src="/images/icons/Browser.svg" alt="" width="24" height="24" loading="lazy" aria-hidden="true"/><span><b>Business websites</b><small>Corporate & portfolio sites</small></span></a><a class="sub-link" href="/en/services/webshops/"><img src="/images/icons/Sale.svg" alt="" width="24" height="24" loading="lazy" aria-hidden="true"/><span><b>E-commerce stores</b><small>Online shops that sell</small></span></a><a class="sub-link" href="/en/services/nextjs/"><img src="/images/icons/Performance.svg" alt="" width="24" height="24" loading="lazy" aria-hidden="true"/><span><b>Next.js websites</b><small>Premium speed & SEO</small></span></a><a class="sub-link" href="/en/services/wordpress/"><img src="/images/icons/Internet.svg" alt="" width="24" height="24" loading="lazy" aria-hidden="true"/><span><b>WordPress websites</b><small>Easy content management</small></span></a><a class="sub-link" href="/en/custom-software/"><img src="/images/icons/PC.svg" alt="" width="24" height="24" loading="lazy" aria-hidden="true"/><span><b>Custom software</b><small>ERP, CRM & automation</small></span></a><a class="sub-link" href="/en/mobile-app-development/"><img src="/images/icons/Mobile.svg" alt="" width="24" height="24" loading="lazy" aria-hidden="true"/><span><b>Mobile apps</b><small>iOS & Android</small></span></a><a class="sub-all" href="/en/services/">All services →</a></div></div></div><a href="/en/portfolio/" aria-current="page">Portfolio</a><a href="/en/website-draft/">Draft your site</a><a href="/en/tech-stack/">Technologies</a><a href="/en/faq/">FAQ</a>
 <span class="nav-lang"><a href="/sr/portfolio/planika/" lang="sr" hreflang="sr">SR</a> · <strong>EN</strong></span>
 <a class="nav-cta" href="/en/contact/">Get a quote</a></nav>
@@ -439,7 +449,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <a class="link-arrow" href="/en/portfolio/mn89/">MN89 Inc</a>
 </div>
 </div></section>
-<section class="sec sec-dark">
+<section class="sec sec-alt">
 <div class="wrap center reveal">
 <h2 class="headline">Want a site like this for your business?</h2>
 <p class="lede mt-2 maxw">Request a free quote — tell us what you need and we propose a tailored solution.</p>
@@ -458,6 +468,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="wrap-wide">
 <div class="footer-grid">
 <div>
+<img class="f-logo" src="/images/logo-4.png" alt="" width="40" height="40" loading="lazy"/>
 <p class="f-brand">IzradaWebSajta.co</p>
 <p class="f-about">Professional web development: websites, e-commerce stores, custom software and mobile apps — in every technology.</p>
 <p class="mt-2"><a class="tel-strong" href="tel:+38166410350">+381 66 410 350</a><br/>Belgrade, Serbia<br/>Mon–Fri: 09:00–17:00 CET</p>
