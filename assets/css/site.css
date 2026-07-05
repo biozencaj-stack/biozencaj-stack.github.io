@@ -481,3 +481,9 @@ html,body{overflow-x:hidden;overflow-x:clip}
 /* ilustracije u blog člancima (postojeći mokapi) */
 .post-img{margin:36px auto}
 .post-img img{display:block;width:100%;max-width:720px;height:auto;margin:0 auto}
+
+/* konverzioni mikro-elementi */
+.proof-bar{display:flex;gap:10px 26px;justify-content:center;flex-wrap:wrap;margin-top:20px;font-size:14px;color:var(--ink-2);animation:heroRise .7s .34s cubic-bezier(.2,.7,.2,1) both}
+.proof-bar span{white-space:nowrap}
+.cta-note{margin-top:14px;font-size:13.5px;color:#b4b4b9;letter-spacing:.01em}
+@media (prefers-reduced-motion:reduce){.proof-bar{animation:none}}
