@@ -477,3 +477,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 .info-card dt img{flex:0 0 auto;opacity:.85}
 
 .prose a,.consent a{text-decoration:underline;text-underline-offset:2px}
+
+/* ilustracije u blog člancima (postojeći mokapi) */
+.post-img{margin:36px auto}
+.post-img img{display:block;width:100%;max-width:720px;height:auto;margin:0 auto}
