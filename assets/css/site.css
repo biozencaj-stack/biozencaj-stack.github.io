@@ -499,3 +499,10 @@ html,body{overflow-x:hidden;overflow-x:clip}
   .hero-tag{margin:34px 0 0}
   .hero:has(.hero-tag){padding-bottom:36px}
 }
+
+/* mobilni: niži zakucani header */
+@media (max-width:700px){
+  .nav-inner{height:54px;gap:16px}
+  .brand img{width:34px;height:34px}
+  .m-nav{max-height:calc(100dvh - 54px)}
+}
