@@ -390,7 +390,7 @@ a.shot-card:hover{text-decoration:none}
 .footer{background:linear-gradient(180deg,#fafafc 0%,#f0f0f4 100%);border-top:1px solid var(--line);padding:48px 0 40px;font-size:.8125rem;color:var(--ink-2)}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;padding-bottom:32px;border-bottom:1px solid var(--line)}
 @media (max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.footer-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.footer-grid{grid-template-columns:1fr 1fr;gap:26px 20px}.footer-grid>div:first-child{grid-column:1/-1}}
 .footer h2{font-size:.8125rem;font-weight:600;color:var(--ink);margin-bottom:12px}
 .footer ul li{margin-bottom:8px}
 .footer a{color:var(--ink-2)}
@@ -432,7 +432,8 @@ html,body{overflow-x:hidden;overflow-x:clip}
 .proof-bar span{white-space:nowrap}
 .cta-note{margin-top:14px;font-size:13.5px;color:#b4b4b9;letter-spacing:.01em}
 @media (prefers-reduced-motion:reduce){.proof-bar{animation:none}}
-.sec-beograd-photo{background-color:#0b0d12;background-image:linear-gradient(rgba(8,10,14,.72),rgba(8,10,14,.72)),url("/images/beograd-mood.webp");background-size:cover;background-position:center}</style>
+.sec-beograd-photo{background-color:#0b0d12;background-image:linear-gradient(rgba(8,10,14,.72),rgba(8,10,14,.72)),url("/images/beograd-mood.webp");background-size:cover;background-position:center}
+@media (max-width:700px){.hero+.sec-tight{margin-top:40px}}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://izradawebsajta.co/en/"},{"@type":"ListItem","position":2,"name":"Portfolio","item":"https://izradawebsajta.co/en/portfolio/"},{"@type":"ListItem","position":3,"name":"Concorde Group Holdings","item":"https://izradawebsajta.co/en/portfolio/concorde/"}]}</script>
 <script src="/assets/js/site.min.js" defer></script>
@@ -448,7 +449,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <button class="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="m-nav"><span></span></button>
 </div>
 <nav class="m-nav" id="m-nav" aria-label="Mobile navigation"><a href="/en/services/">Services</a><a class="m-sub" href="/en/services/"><img src="/images/icons/Browser.svg" alt="" width="22" height="22" loading="lazy" aria-hidden="true"/><span><b>Business websites</b><small>Corporate & portfolio sites</small></span></a><a class="m-sub" href="/en/services/webshops/"><img src="/images/icons/Sale.svg" alt="" width="22" height="22" loading="lazy" aria-hidden="true"/><span><b>E-commerce stores</b><small>Online shops that sell</small></span></a><a class="m-sub" href="/en/services/nextjs/"><img src="/images/icons/Performance.svg" alt="" width="22" height="22" loading="lazy" aria-hidden="true"/><span><b>Next.js websites</b><small>Premium speed & SEO</small></span></a><a class="m-sub" href="/en/services/wordpress/"><img src="/images/icons/Internet.svg" alt="" width="22" height="22" loading="lazy" aria-hidden="true"/><span><b>WordPress websites</b><small>Easy content management</small></span></a><a class="m-sub" href="/en/custom-software/"><img src="/images/icons/PC.svg" alt="" width="22" height="22" loading="lazy" aria-hidden="true"/><span><b>Custom software</b><small>ERP, CRM & automation</small></span></a><a class="m-sub" href="/en/mobile-app-development/"><img src="/images/icons/Mobile.svg" alt="" width="22" height="22" loading="lazy" aria-hidden="true"/><span><b>Mobile apps</b><small>iOS & Android</small></span></a><a href="/en/portfolio/">Portfolio</a><a href="/en/website-draft/">Draft your site</a><a href="/en/tech-stack/">Technologies</a><a href="/en/faq/">FAQ</a>
-<a href="/sr/portfolio/concorde/" lang="sr" hreflang="sr">Srpski</a>
+<a href="/sr/portfolio/concorde/" lang="sr" hreflang="sr" aria-label="Srpski" style="font-size:22px">🇷🇸</a>
 <a class="m-cta" href="/en/contact/">Get a quote</a></nav>
 </header>
 <main id="content">

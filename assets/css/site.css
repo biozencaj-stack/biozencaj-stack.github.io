@@ -432,7 +432,7 @@ a.shot-card:hover{text-decoration:none}
 .footer{background:linear-gradient(180deg,#fafafc 0%,#f0f0f4 100%);border-top:1px solid var(--line);padding:48px 0 40px;font-size:.8125rem;color:var(--ink-2)}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;padding-bottom:32px;border-bottom:1px solid var(--line)}
 @media (max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.footer-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.footer-grid{grid-template-columns:1fr 1fr;gap:26px 20px}.footer-grid>div:first-child{grid-column:1/-1}}
 .footer h2{font-size:.8125rem;font-weight:600;color:var(--ink);margin-bottom:12px}
 .footer ul li{margin-bottom:8px}
 .footer a{color:var(--ink-2)}
@@ -490,3 +490,6 @@ html,body{overflow-x:hidden;overflow-x:clip}
 
 /* Beograd strana: foto pozadina za "Nađimo se" (isti princip kao foto CTA) */
 .sec-beograd-photo{background-color:#0b0d12;background-image:linear-gradient(rgba(8,10,14,.72),rgba(8,10,14,.72)),url("/images/beograd-mood.webp");background-size:cover;background-position:center}
+
+/* mobilni: dah između hero-a i uvodnog pasusa */
+@media (max-width:700px){.hero+.sec-tight{margin-top:40px}}
