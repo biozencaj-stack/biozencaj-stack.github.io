@@ -45,7 +45,7 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 
 /* ---------- Header / nav ---------- */
 .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.78);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.08);transition:background .3s,transform .35s ease}
-.nav.hide{transform:translateY(-100%)}
+/* header zakucan kao na apple.com — .hide klasa iz JS-a namerno bez efekta */
 .nav-inner{max-width:1240px;margin:0 auto;padding:0 22px;height:66px;display:flex;align-items:center;gap:28px}
 .brand{display:flex;align-items:center;font-size:17px;font-weight:700;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
 .brand:hover{text-decoration:none}
