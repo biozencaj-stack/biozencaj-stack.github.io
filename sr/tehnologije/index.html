@@ -433,7 +433,11 @@ html,body{overflow-x:hidden;overflow-x:clip}
 .cta-note{margin-top:14px;font-size:13.5px;color:#b4b4b9;letter-spacing:.01em}
 @media (prefers-reduced-motion:reduce){.proof-bar{animation:none}}
 .sec-beograd-photo{background-color:#0b0d12;background-image:linear-gradient(rgba(8,10,14,.72),rgba(8,10,14,.72)),url("/images/beograd-mood.webp");background-size:cover;background-position:center}
-@media (max-width:700px){.hero+.sec-tight{margin-top:40px}}</style>
+@media (max-width:700px){.hero+.sec-tight{margin-top:40px}}
+@media (max-width:700px){
+  .hero-tag{margin:34px 0 0}
+  .hero:has(.hero-tag){padding-bottom:36px}
+}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Početna","item":"https://izradawebsajta.co/sr/"},{"@type":"ListItem","position":2,"name":"Tehnologije","item":"https://izradawebsajta.co/sr/tehnologije/"}]}</script>
 <script src="/assets/js/site.min.js" defer></script>

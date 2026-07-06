@@ -493,3 +493,9 @@ html,body{overflow-x:hidden;overflow-x:clip}
 
 /* mobilni: dah između hero-a i uvodnog pasusa */
 @media (max-width:700px){.hero+.sec-tight{margin-top:40px}}
+
+/* mobilni: kraća praznina oko hero taglinea na početnoj */
+@media (max-width:700px){
+  .hero-tag{margin:34px 0 0}
+  .hero:has(.hero-tag){padding-bottom:36px}
+}
