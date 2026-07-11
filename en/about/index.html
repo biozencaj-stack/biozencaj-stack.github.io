@@ -132,14 +132,14 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .center{text-align:center}
 .maxw{max-width:720px;margin-left:auto;margin-right:auto}
 .grad{background:linear-gradient(92deg,#0a84ff 0%,#7d5cff 45%,#bf5af2 70%,#ff375f 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-shot{position:relative;margin:44px auto -8px;max-width:1020px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
+.hero-shot{position:relative;margin:44px auto -8px;max-width:1240px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
 .hero-shot::before{content:"";position:absolute;inset:-14% -10% -20%;z-index:-1;pointer-events:none;border-radius:50%;
   background:radial-gradient(52% 58% at 38% 42%,rgba(10,132,255,.16),transparent 70%),
              radial-gradient(46% 52% at 66% 38%,rgba(191,90,242,.13),transparent 72%),
              radial-gradient(44% 50% at 55% 72%,rgba(255,55,95,.09),transparent 74%)}
 .hero-shot img{height:auto;min-width:0}
 .hero-shot .hs-main{width:min(100%,880px)}
-.hero-shot .hs-wide{width:min(100%,1020px)}
+.hero-shot .hs-wide{width:min(100%,1240px)}
 .hero-shot .hs-phone{width:186px;flex:none}
 .hero-shot.hs3d{animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both,heroFloat 9s 1.8s ease-in-out infinite}
 .hs3d img{mix-blend-mode:multiply;animation:heroTilt3d 1.15s .42s cubic-bezier(.2,.7,.2,1) both}
@@ -442,7 +442,10 @@ html,body{overflow-x:hidden;overflow-x:clip}
   .brand img{width:34px;height:34px}
   .m-nav{max-height:calc(100dvh - 54px)}
 }
-.hs-duo{width:min(100%,480px);height:auto}</style>
+.hs-duo{width:min(100%,480px);height:auto}
+@media (max-width:700px){
+  .hero-shot .hs-wide{width:calc(100% + 44px);max-width:none;margin:0 -22px}
+}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://izradawebsajta.co/en/"},{"@type":"ListItem","position":2,"name":"About us","item":"https://izradawebsajta.co/en/about/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"About — IzradaWebSajta.co","url":"https://izradawebsajta.co/en/about/","about":{"@id":"https://izradawebsajta.co/#business"}}</script>
 <script src="/assets/js/site.min.js" defer></script>

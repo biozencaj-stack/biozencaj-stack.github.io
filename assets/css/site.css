@@ -128,14 +128,14 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .grad{background:linear-gradient(92deg,#0a84ff 0%,#7d5cff 45%,#bf5af2 70%,#ff375f 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 
 /* ---------- Hero shot (uređaji na vrhu strane) ---------- */
-.hero-shot{position:relative;margin:44px auto -8px;max-width:1020px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
+.hero-shot{position:relative;margin:44px auto -8px;max-width:1240px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
 .hero-shot::before{content:"";position:absolute;inset:-14% -10% -20%;z-index:-1;pointer-events:none;border-radius:50%;
   background:radial-gradient(52% 58% at 38% 42%,rgba(10,132,255,.16),transparent 70%),
              radial-gradient(46% 52% at 66% 38%,rgba(191,90,242,.13),transparent 72%),
              radial-gradient(44% 50% at 55% 72%,rgba(255,55,95,.09),transparent 74%)}
 .hero-shot img{height:auto;min-width:0}
 .hero-shot .hs-main{width:min(100%,880px)}
-.hero-shot .hs-wide{width:min(100%,1020px)}
+.hero-shot .hs-wide{width:min(100%,1240px)}
 .hero-shot .hs-phone{width:186px;flex:none}
 /* hs3d: 3D ulazak (laptop se uspravlja iz nagiba, telefon uleće sa strane) pa trajni blagi float;
    multiply pretvara belu pozadinu slika u providnu na aurora gradijentu */
@@ -509,3 +509,8 @@ html,body{overflow-x:hidden;overflow-x:clip}
 
 /* dupli telefoni u heroju strane aplikacija */
 .hs-duo{width:min(100%,480px);height:auto}
+
+/* mobilni: hero mokap od ivice do ivice (krupniji prikaz) */
+@media (max-width:700px){
+  .hero-shot .hs-wide{width:calc(100% + 44px);max-width:none;margin:0 -22px}
+}

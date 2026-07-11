@@ -132,14 +132,14 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .center{text-align:center}
 .maxw{max-width:720px;margin-left:auto;margin-right:auto}
 .grad{background:linear-gradient(92deg,#0a84ff 0%,#7d5cff 45%,#bf5af2 70%,#ff375f 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-shot{position:relative;margin:44px auto -8px;max-width:1020px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
+.hero-shot{position:relative;margin:44px auto -8px;max-width:1240px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
 .hero-shot::before{content:"";position:absolute;inset:-14% -10% -20%;z-index:-1;pointer-events:none;border-radius:50%;
   background:radial-gradient(52% 58% at 38% 42%,rgba(10,132,255,.16),transparent 70%),
              radial-gradient(46% 52% at 66% 38%,rgba(191,90,242,.13),transparent 72%),
              radial-gradient(44% 50% at 55% 72%,rgba(255,55,95,.09),transparent 74%)}
 .hero-shot img{height:auto;min-width:0}
 .hero-shot .hs-main{width:min(100%,880px)}
-.hero-shot .hs-wide{width:min(100%,1020px)}
+.hero-shot .hs-wide{width:min(100%,1240px)}
 .hero-shot .hs-phone{width:186px;flex:none}
 .hero-shot.hs3d{animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both,heroFloat 9s 1.8s ease-in-out infinite}
 .hs3d img{mix-blend-mode:multiply;animation:heroTilt3d 1.15s .42s cubic-bezier(.2,.7,.2,1) both}
@@ -442,7 +442,10 @@ html,body{overflow-x:hidden;overflow-x:clip}
   .brand img{width:34px;height:34px}
   .m-nav{max-height:calc(100dvh - 54px)}
 }
-.hs-duo{width:min(100%,480px);height:auto}</style>
+.hs-duo{width:min(100%,480px);height:auto}
+@media (max-width:700px){
+  .hero-shot .hs-wide{width:calc(100% + 44px);max-width:none;margin:0 -22px}
+}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Početna","item":"https://izradawebsajta.co/sr/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://izradawebsajta.co/sr/blog/"},{"@type":"ListItem","position":3,"name":"Cena izrade web shopa u Srbiji (2026)","item":"https://izradawebsajta.co/sr/blog/cena-izrade-web-shopa/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cena izrade web shopa u Srbiji (2026) — IzradaWebSajta.co","description":"Cena izrade web shopa 2026: mali shop 1.000–1.500 €, standardan 1.500–2.500 €, po meri od 5.000 €. Šta pomera cenu — plaćanja, kuriri, fiskalizacija.","url":"https://izradawebsajta.co/sr/blog/cena-izrade-web-shopa/","mainEntityOfPage":"https://izradawebsajta.co/sr/blog/cena-izrade-web-shopa/","datePublished":"2026-07-05","dateModified":"2026-07-05","inLanguage":"sr","author":{"@type":"Organization","name":"IzradaWebSajta.co","@id":"https://izradawebsajta.co/#business"},"publisher":{"@id":"https://izradawebsajta.co/#business"},"image":"https://izradawebsajta.co/images/og-default.png"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Koliko košta izrada web shopa na WooCommerce-u?","acceptedAnswer":{"@type":"Answer","text":"Funkcionalna WooCommerce prodavnica sa dizajnom po meri, kartičnim plaćanjem i kurirskom integracijom košta od 1.000 do 2.500 €, u zavisnosti od broja proizvoda i integracija."}},{"@type":"Question","name":"Da li je u cenu uključena fiskalizacija?","acceptedAnswer":{"@type":"Answer","text":"Kod nas — da, ako prodajete u Srbiji: povezujemo shop sa eFiskalizacijom (LPFR/ESIR) i proverimo ceo tok porudžbine pre pokretanja. Uvek pitajte da li je ova stavka u ponudi, jer se naknadno plaća skuplje."}},{"@type":"Question","name":"Koliko traje izrada internet prodavnice?","acceptedAnswer":{"@type":"Answer","text":"Standardan shop: 4–6 nedelja od dogovora, pod uslovom da su proizvodi (fotografije, opisi, cene) spremni. Najveći uzrok kašnjenja je priprema kataloga — tu možemo da pomognemo."}},{"@type":"Question","name":"Da li mogu da počnem sa malim shopom pa da ga širim?","acceptedAnswer":{"@type":"Answer","text":"Da — to i savetujemo: krenite sa osnovnim asortimanom i pouzećem, pa dodajite kartice, kurire i integracije kad prodaja krene. Bitno je samo da temelj (platforma i struktura) bude postavljen da može da raste."}}]}</script>
 <script src="/assets/js/site.min.js" defer></script>
