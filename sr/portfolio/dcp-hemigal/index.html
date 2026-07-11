@@ -248,10 +248,12 @@ a.shot-card:hover{text-decoration:none}
 .shot-meta p{font-size:.875rem;color:var(--ink-2);margin-top:2px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:22px}
 .chip{font-size:.8125rem;font-weight:500;color:var(--ink-2);background:var(--bg-alt);border-radius:var(--r-pill);padding:6px 14px}
-.proj-shots{display:flex;gap:24px;align-items:flex-start;justify-content:center}
-.proj-shots .desk{flex:1 1 auto;min-width:0;border-radius:var(--r-card);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.16)}
-.proj-shots .phone{flex:0 0 170px;border-radius:22px;overflow:hidden;box-shadow:0 16px 44px rgba(0,0,0,.2)}
-@media (max-width:700px){.proj-shots{flex-direction:column;align-items:center}.proj-shots .phone{flex-basis:auto;width:180px}}
+.proj-shots{display:flex;gap:34px;align-items:center;justify-content:center}
+.proj-shots .desk{flex:1 1 auto;min-width:0;border-radius:var(--r-card);overflow:hidden;box-shadow:0 18px 48px rgba(0,0,0,.12)}
+.proj-shots .desk img{display:block;width:100%;height:auto}
+.proj-shots .phone{flex:0 0 200px}
+.proj-shots .phone img{display:block;width:100%;height:auto;filter:drop-shadow(0 16px 30px rgba(0,0,0,.18))}
+@media (max-width:700px){.proj-shots{flex-direction:column;align-items:center}.proj-shots .phone{flex-basis:auto;width:190px}}
 .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
 @media (max-width:640px){.gallery{grid-template-columns:1fr}}
 .gallery img{border-radius:var(--r-card);border:1px solid rgba(0,0,0,.06)}
@@ -486,8 +488,8 @@ html,body{overflow-x:hidden;overflow-x:clip}
 </section>
 <section class="sec-tight"><div class="wrap-wide">
 <div class="proj-shots">
-<figure class="desk"><img src="/images/portfolio/dcp-m-lg.webp" alt="DCP Hemigal – izrada web shopa za proizvođača kozmetike" width="800" height="500" loading="eager" fetchpriority="high" decoding="async"/></figure>
-
+<figure class="desk"><img src="/images/portfolio/dcp-g-lg.webp" alt="DCP Hemigal – izrada web shopa za proizvođača kozmetike" width="800" height="500" loading="eager" fetchpriority="high" decoding="async"/></figure>
+<figure class="phone"><img src="/images/portfolio/dcp-tel-lg.webp" alt="DCP Hemigal – mobilni prikaz" width="210" height="280" loading="lazy" decoding="async"/></figure>
 </div>
 </div></section>
 <section class="sec"><div class="wrap-wide"><div class="grid-3">

@@ -248,10 +248,12 @@ a.shot-card:hover{text-decoration:none}
 .shot-meta p{font-size:.875rem;color:var(--ink-2);margin-top:2px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:22px}
 .chip{font-size:.8125rem;font-weight:500;color:var(--ink-2);background:var(--bg-alt);border-radius:var(--r-pill);padding:6px 14px}
-.proj-shots{display:flex;gap:24px;align-items:flex-start;justify-content:center}
-.proj-shots .desk{flex:1 1 auto;min-width:0;border-radius:var(--r-card);overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.16)}
-.proj-shots .phone{flex:0 0 170px;border-radius:22px;overflow:hidden;box-shadow:0 16px 44px rgba(0,0,0,.2)}
-@media (max-width:700px){.proj-shots{flex-direction:column;align-items:center}.proj-shots .phone{flex-basis:auto;width:180px}}
+.proj-shots{display:flex;gap:34px;align-items:center;justify-content:center}
+.proj-shots .desk{flex:1 1 auto;min-width:0;border-radius:var(--r-card);overflow:hidden;box-shadow:0 18px 48px rgba(0,0,0,.12)}
+.proj-shots .desk img{display:block;width:100%;height:auto}
+.proj-shots .phone{flex:0 0 200px}
+.proj-shots .phone img{display:block;width:100%;height:auto;filter:drop-shadow(0 16px 30px rgba(0,0,0,.18))}
+@media (max-width:700px){.proj-shots{flex-direction:column;align-items:center}.proj-shots .phone{flex-basis:auto;width:190px}}
 .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
 @media (max-width:640px){.gallery{grid-template-columns:1fr}}
 .gallery img{border-radius:var(--r-card);border:1px solid rgba(0,0,0,.06)}
@@ -517,22 +519,22 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <section class="sec sec-alt"><div class="wrap-wide">
 <div class="sec-head reveal"><span class="kicker">Portfolio</span><h2 class="headline">Featured projects.</h2><p class="lede">A selection of our recent work.</p></div>
 <div class="grid-3"><a class="shot-card reveal" href="/en/portfolio/principshop/">
-<figure><img src="/images/portfolio/princip-m.webp" srcset="/images/portfolio/princip-m.webp 432w, /images/portfolio/princip-m-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Princip Shop – custom WooCommerce store for a Serbian fashion brand" width="432" height="270" loading="lazy" decoding="async"/></figure>
+<figure><img src="/images/portfolio/princip-g.webp" srcset="/images/portfolio/princip-g.webp 432w, /images/portfolio/princip-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Princip Shop – custom WooCommerce store for a Serbian fashion brand" width="432" height="270" loading="lazy" decoding="async"/></figure>
 <div class="shot-meta"><h270>Princip Shop</h270><p>E-commerce · Fashion</p></div>
 </a><a class="shot-card reveal" href="/en/portfolio/planika/">
-<figure><img src="/images/portfolio/planika-m.webp" srcset="/images/portfolio/planika-m.webp 432w, /images/portfolio/planika-m-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Planika – e-commerce build for a leading Serbian footwear brand" width="432" height="270" loading="lazy" decoding="async"/></figure>
+<figure><img src="/images/portfolio/planika-g.webp" srcset="/images/portfolio/planika-g.webp 432w, /images/portfolio/planika-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Planika – e-commerce build for a leading Serbian footwear brand" width="432" height="270" loading="lazy" decoding="async"/></figure>
 <div class="shot-meta"><h270>Planika</h270><p>E-commerce · Footwear</p></div>
 </a><a class="shot-card reveal" href="/en/portfolio/lipo/">
-<figure><img src="/images/portfolio/lipo-m.webp" srcset="/images/portfolio/lipo-m.webp 432w, /images/portfolio/lipo-m-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Lipo Kozmetika – natural cosmetics e-commerce build" width="432" height="270" loading="lazy" decoding="async"/></figure>
+<figure><img src="/images/portfolio/lipo-g.webp" srcset="/images/portfolio/lipo-g.webp 432w, /images/portfolio/lipo-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Lipo Kozmetika – natural cosmetics e-commerce build" width="432" height="270" loading="lazy" decoding="async"/></figure>
 <div class="shot-meta"><h270>Lipo Kozmetika</h270><p>E-commerce · Cosmetics</p></div>
 </a><a class="shot-card reveal" href="/en/portfolio/barrique/">
-<figure><img src="/images/portfolio/barik-m.webp" srcset="/images/portfolio/barik-m.webp 432w, /images/portfolio/barik-m-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Barrique Đorđević – family winery website" width="432" height="270" loading="lazy" decoding="async"/></figure>
+<figure><img src="/images/portfolio/barik-g.webp" srcset="/images/portfolio/barik-g.webp 432w, /images/portfolio/barik-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Barrique Đorđević – family winery website" width="432" height="270" loading="lazy" decoding="async"/></figure>
 <div class="shot-meta"><h270>Barrique Đorđević</h270><p>Business website · Winery</p></div>
 </a><a class="shot-card reveal" href="/en/portfolio/uzmikredit/">
-<figure><img src="/images/portfolio/uzmikredit-m.webp" srcset="/images/portfolio/uzmikredit-m.webp 432w, /images/portfolio/uzmikredit-m-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="UzmiKredit – loan brokerage website" width="432" height="270" loading="lazy" decoding="async"/></figure>
+<figure><img src="/images/portfolio/uzmikredit-g.webp" srcset="/images/portfolio/uzmikredit-g.webp 432w, /images/portfolio/uzmikredit-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="UzmiKredit – loan brokerage website" width="432" height="270" loading="lazy" decoding="async"/></figure>
 <div class="shot-meta"><h270>UzmiKredit</h270><p>Services · Finance</p></div>
 </a><a class="shot-card reveal" href="/en/portfolio/porta-royal/">
-<figure><img src="/images/portfolio/porta-royal-m.webp" srcset="/images/portfolio/porta-royal-m.webp 432w, /images/portfolio/porta-royal-m-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Porta Royal – interior doors e-commerce build" width="432" height="270" loading="lazy" decoding="async"/></figure>
+<figure><img src="/images/portfolio/porta-royal-g.webp" srcset="/images/portfolio/porta-royal-g.webp 432w, /images/portfolio/porta-royal-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Porta Royal – interior doors e-commerce build" width="432" height="270" loading="lazy" decoding="async"/></figure>
 <div class="shot-meta"><h270>Porta Royal</h270><p>E-commerce · Interior</p></div>
 </a></div>
 <div class="center mt-4"><a class="btn btn-ghost" href="/en/portfolio/">Full portfolio</a></div>
