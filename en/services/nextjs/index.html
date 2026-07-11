@@ -133,6 +133,7 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .maxw{max-width:720px;margin-left:auto;margin-right:auto}
 .grad{background:linear-gradient(92deg,#0a84ff 0%,#7d5cff 45%,#bf5af2 70%,#ff375f 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-shot{position:relative;margin:44px auto -8px;max-width:1240px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
+.hero-shot>a{display:contents}
 .hero-shot::before{content:"";position:absolute;inset:-14% -10% -20%;z-index:-1;pointer-events:none;border-radius:50%;
   background:radial-gradient(52% 58% at 38% 42%,rgba(10,132,255,.16),transparent 70%),
              radial-gradient(46% 52% at 66% 38%,rgba(191,90,242,.13),transparent 72%),
@@ -479,7 +480,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <section class="hero wrap"><span class="kicker">Service</span><h1 class="display"><span class="grad">Next.js</span> development.</h1>
 <p class="lede">Premium websites without limits — the technology behind Netflix, TikTok and Nike, working for your business.</p>
 <div class="cta-row"><a class="btn btn-primary" href="/en/contact/">Get a quote</a><a class="link-arrow" href="tel:+38166410350">Call +381 66 410 350</a></div>
-<div class="hero-shot hs3d"><img class="hs-main" src="/images/portfolio/planika-m-lg.webp" alt="Next.js development — Planika e-commerce on a MacBook" width="800" height="500" loading="eager" fetchpriority="high" decoding="async"/></div>
+<div class="hero-shot hs3d"><a href="/en/portfolio/planika/"><img class="hs-main" src="/images/portfolio/planika-m-lg.webp" alt="Next.js development — Planika e-commerce on a MacBook" width="800" height="500" loading="eager" fetchpriority="high" decoding="async"/></a></div>
 </section>
 <section class="sec-tight"><div class="wrap"><div class="prose reveal">
 <p>Next.js is the choice for projects where the website is a growth tool, not a cost. Pages pre-render to static HTML and load practically instantly — and since speed is a ranking factor, that difference shows up in positions, not just impressions. This is how we built the <a href="/en/portfolio/concorde/">Concorde Group corporate site</a> (Lighthouse 95+) and <a href="/en/portfolio/planika/">Planika's e-commerce platform</a> with a custom CMS. The site you're reading is statically generated too — that's why it loads this fast.</p>

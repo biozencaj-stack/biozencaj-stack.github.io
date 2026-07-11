@@ -129,6 +129,7 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 
 /* ---------- Hero shot (uređaji na vrhu strane) ---------- */
 .hero-shot{position:relative;margin:44px auto -8px;max-width:1240px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
+.hero-shot>a{display:contents}
 .hero-shot::before{content:"";position:absolute;inset:-14% -10% -20%;z-index:-1;pointer-events:none;border-radius:50%;
   background:radial-gradient(52% 58% at 38% 42%,rgba(10,132,255,.16),transparent 70%),
              radial-gradient(46% 52% at 66% 38%,rgba(191,90,242,.13),transparent 72%),
