@@ -510,7 +510,17 @@ html,body{overflow-x:hidden;overflow-x:clip}
 /* dupli telefoni u heroju strane aplikacija */
 .hs-duo{width:min(100%,480px);height:auto}
 
+/* hero mokap probija kontejner — do 94vw (maks 1440px), samo se sam centrira */
+@media (min-width:701px){
+  .hero-shot.hs3d{max-width:none;
+    margin-left:clamp(-200px,calc((100% - 94vw)/2),0px);
+    margin-right:clamp(-200px,calc((100% - 94vw)/2),0px)}
+  .hs3d .hs-wide{width:100%;max-width:1440px}
+}
 /* mobilni: hero mokap od ivice do ivice (krupniji prikaz) */
 @media (max-width:700px){
   .hero-shot .hs-wide{width:calc(100% + 44px);max-width:none;margin:0 -22px}
 }
+
+/* flat UI slika u heroju (bez laptop mokapa): senka prati zaobljene uglove */
+.hs-flat{width:min(100%,980px);height:auto;mix-blend-mode:normal !important;filter:drop-shadow(0 26px 54px rgba(0,0,0,.16))}

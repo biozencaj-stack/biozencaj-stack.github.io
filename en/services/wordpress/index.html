@@ -443,9 +443,16 @@ html,body{overflow-x:hidden;overflow-x:clip}
   .m-nav{max-height:calc(100dvh - 54px)}
 }
 .hs-duo{width:min(100%,480px);height:auto}
+@media (min-width:701px){
+  .hero-shot.hs3d{max-width:none;
+    margin-left:clamp(-200px,calc((100% - 94vw)/2),0px);
+    margin-right:clamp(-200px,calc((100% - 94vw)/2),0px)}
+  .hs3d .hs-wide{width:100%;max-width:1440px}
+}
 @media (max-width:700px){
   .hero-shot .hs-wide{width:calc(100% + 44px);max-width:none;margin:0 -22px}
-}</style>
+}
+.hs-flat{width:min(100%,980px);height:auto;mix-blend-mode:normal !important;filter:drop-shadow(0 26px 54px rgba(0,0,0,.16))}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://izradawebsajta.co/en/"},{"@type":"ListItem","position":2,"name":"WordPress","item":"https://izradawebsajta.co/en/services/wordpress/"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"WordPress development","serviceType":"WordPress development","description":"Custom WordPress websites: bespoke themes, speed optimisation, SEO setup, training and maintenance.","url":"https://izradawebsajta.co/en/services/wordpress/","provider":{"@id":"https://izradawebsajta.co/#business"},"areaServed":[{"@type":"Country","name":"Srbija"}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does a WordPress website cost?","acceptedAnswer":{"@type":"Answer","text":"A presentation WordPress site runs €300–800, larger corporate sites €800–2,000, WooCommerce stores from €1,000. Exact quote after a free consultation."}},{"@type":"Question","name":"Can I edit content myself?","acceptedAnswer":{"@type":"Answer","text":"Yes — that's WordPress's biggest strength. We train you in about an hour, and you manage texts, images and posts on your own."}},{"@type":"Question","name":"My WordPress site is slow or hacked — can you fix it?","acceptedAnswer":{"@type":"Answer","text":"Yes — we do redesigns, speed optimisation, malware cleanup and migrations of existing WordPress sites without losing content or rankings."}}]}</script>
 <script src="/assets/js/site.min.js" defer></script>
@@ -469,7 +476,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <section class="hero wrap"><span class="kicker">Service</span><h1 class="display"><span class="grad">WordPress</span> development.</h1>
 <p class="lede">A reliable website you manage yourself — custom theme, optimised speed and SEO from day one.</p>
 <div class="cta-row"><a class="btn btn-primary" href="/en/contact/">Get a quote</a><a class="link-arrow" href="tel:+38166410350">Call +381 66 410 350</a></div>
-<div class="hero-shot hs3d"><img class="hs-main" src="/images/portfolio/mn89-m-lg.webp" alt="WordPress development — MN89 corporate website on a MacBook" width="800" height="500" loading="eager" fetchpriority="high" decoding="async"/></div>
+<div class="hero-shot hs3d"><img class="hs-main" src="/images/portfolio/uzmikredit-m-lg.webp" alt="WordPress development — UzmiKredit loan brokerage website on a MacBook" width="800" height="500" loading="eager" fetchpriority="high" decoding="async"/></div>
 </section>
 <section class="sec-tight"><div class="wrap"><div class="prose reveal">
 <p>WordPress powers over 40% of the web — but a quality build is what separates a fast, secure site from a bloated template. We build WordPress sites with lightweight custom themes, performance optimisation and hardened security. That's how we built sites for <a href="/en/portfolio/mn89/">MN89</a> and <a href="/en/portfolio/gns/">GNS Hosting</a>, and the <a href="/en/portfolio/principshop/">Princip fashion store</a> — WooCommerce at its core, with about 70% custom development on top.</p>
