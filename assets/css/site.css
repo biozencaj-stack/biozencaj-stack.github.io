@@ -506,3 +506,6 @@ html,body{overflow-x:hidden;overflow-x:clip}
   .brand img{width:34px;height:34px}
   .m-nav{max-height:calc(100dvh - 54px)}
 }
+
+/* dupli telefoni u heroju strane aplikacija */
+.hs-duo{width:min(100%,480px);height:auto}
