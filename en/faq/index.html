@@ -142,7 +142,7 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .hero-shot .hs-wide{width:min(100%,1240px)}
 .hero-shot .hs-phone{width:186px;flex:none}
 .hero-shot.hs3d{animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both,heroFloat 9s 1.8s ease-in-out infinite}
-.hs3d img{mix-blend-mode:multiply;animation:heroTilt3d 1.15s .42s cubic-bezier(.2,.7,.2,1) both}
+.hs3d img{animation:heroTilt3d 1.15s .42s cubic-bezier(.2,.7,.2,1) both}
 .hs3d .hs-phone{margin-left:-40px;animation:heroTiltPhone 1.1s .68s cubic-bezier(.2,.7,.2,1) both}
 @keyframes heroTilt3d{from{transform:perspective(1400px) rotateX(16deg) scale(.96)}to{transform:none}}
 @keyframes heroTiltPhone{from{opacity:0;transform:perspective(1200px) rotateY(-18deg) translateY(26px) scale(.94)}to{opacity:1;transform:none}}
@@ -445,12 +445,12 @@ html,body{overflow-x:hidden;overflow-x:clip}
 .hs-duo{width:min(100%,480px);height:auto}
 @media (min-width:701px){
   .hero-shot.hs3d{max-width:none;
-    margin-left:clamp(-200px,calc((100% - 94vw)/2),0px);
-    margin-right:clamp(-200px,calc((100% - 94vw)/2),0px)}
-  .hs3d .hs-wide{width:100%;max-width:1440px}
+    margin-left:clamp(-120px,calc((100% - 80vw)/2),0px);
+    margin-right:clamp(-120px,calc((100% - 80vw)/2),0px)}
+  .hs3d .hs-wide{width:100%;max-width:1224px}
 }
 @media (max-width:700px){
-  .hero-shot .hs-wide{width:calc(100% + 44px);max-width:none;margin:0 -22px}
+  .hero-shot .hs-wide{width:100%;max-width:none;margin:0}
 }
 .hs-flat{width:min(100%,980px);height:auto;mix-blend-mode:normal !important;filter:drop-shadow(0 26px 54px rgba(0,0,0,.16))}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>

@@ -142,7 +142,7 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .hero-shot .hs-wide{width:min(100%,1240px)}
 .hero-shot .hs-phone{width:186px;flex:none}
 .hero-shot.hs3d{animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both,heroFloat 9s 1.8s ease-in-out infinite}
-.hs3d img{mix-blend-mode:multiply;animation:heroTilt3d 1.15s .42s cubic-bezier(.2,.7,.2,1) both}
+.hs3d img{animation:heroTilt3d 1.15s .42s cubic-bezier(.2,.7,.2,1) both}
 .hs3d .hs-phone{margin-left:-40px;animation:heroTiltPhone 1.1s .68s cubic-bezier(.2,.7,.2,1) both}
 @keyframes heroTilt3d{from{transform:perspective(1400px) rotateX(16deg) scale(.96)}to{transform:none}}
 @keyframes heroTiltPhone{from{opacity:0;transform:perspective(1200px) rotateY(-18deg) translateY(26px) scale(.94)}to{opacity:1;transform:none}}
@@ -445,12 +445,12 @@ html,body{overflow-x:hidden;overflow-x:clip}
 .hs-duo{width:min(100%,480px);height:auto}
 @media (min-width:701px){
   .hero-shot.hs3d{max-width:none;
-    margin-left:clamp(-200px,calc((100% - 94vw)/2),0px);
-    margin-right:clamp(-200px,calc((100% - 94vw)/2),0px)}
-  .hs3d .hs-wide{width:100%;max-width:1440px}
+    margin-left:clamp(-120px,calc((100% - 80vw)/2),0px);
+    margin-right:clamp(-120px,calc((100% - 80vw)/2),0px)}
+  .hs3d .hs-wide{width:100%;max-width:1224px}
 }
 @media (max-width:700px){
-  .hero-shot .hs-wide{width:calc(100% + 44px);max-width:none;margin:0 -22px}
+  .hero-shot .hs-wide{width:100%;max-width:none;margin:0}
 }
 .hs-flat{width:min(100%,980px);height:auto;mix-blend-mode:normal !important;filter:drop-shadow(0 26px 54px rgba(0,0,0,.16))}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>
@@ -500,6 +500,32 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <h2>Kako izgleda proces</h2>
 <p>Kratak razgovor o poslu i ciljevima, pa predlog strukture i dizajna na uvid. Posle vašeg odobrenja sledi izrada sa SEO temeljima, unos sadržaja i obuka. Standardan rok: 1–2 nedelje od spremnog materijala. Posle pokretanja sajt može da pređe na <a href="/sr/odrzavanje-sajta/">održavanje</a> — ili njime upravljate sami.</p>
 </div></div></section>
+<section class="sec"><div class="wrap"><div class="prose prose-just reveal">
+<h2>Šta sadrži dobar prezentacioni sajt</h2>
+<p>Recept je proveren na desetinama projekata: <strong>početna strana</strong> koja u tri sekunde kaže ko ste i šta nudite, <strong>strana o vama</strong> koja gradi poverenje (priča, tim, reference), <strong>usluge ili proizvodi</strong> razloženi tako da ih razume i neko ko vas prvi put vidi, <strong>galerija ili portfolio</strong> kao dokaz, i <strong>kontakt</strong> sa telefonom, mapom i formom — maksimalno dva klika od bilo koje strane. Tome dodajemo ono što se ne vidi: SEO strukturu, brzinu i povezan Google Business profil, da vas nađu i oni koji ne znaju da postojite.</p>
+<p>Česta dilema je i "da li mi uopšte treba sajt kad imam Instagram?" Mreže su odličan izlog, ali su iznajmljene: algoritam odlučuje ko vas vidi, profil ne izlazi na Google pretragu za vašu delatnost, a poverenje ozbiljnijih klijenata i dalje gradi — sajt. Najbolji rezultat daje kombinacija: mreže dovode pažnju, sajt je pretvara u upit.</p>
+</div></div></section>
+<section class="sec">
+<div class="wrap-wide">
+<div class="sec-head reveal"><span class="kicker">Brojevi</span><h2 class="headline">Mali sajt, <span class="grad">merljiv</span> učinak.</h2></div>
+<div class="grid-2">
+<div class="card reveal">
+<h3 class="title3">Vreme učitavanja početne strane</h3>
+<p class="mt-2" style="margin-bottom:18px">Google meri brzinu i nagrađuje je pozicijama — naši prezentacioni sajtovi su statički i bez suvišnog koda.</p>
+<div class="cmp"><div class="cmp-row"><label>Naš tipičan prezentacioni sajt <small>~0,8 s</small></label><div class="cmp-track"><div class="cmp-fill us" style="--w:19%"></div></div></div><div class="cmp-row"><label>Prosečan sajt u Srbiji <small>~4,2 s</small></label><div class="cmp-track"><div class="cmp-fill avg" style="--w:100%"></div></div></div></div>
+<p class="mt-3"><span class="big-x grad">5×</span></p>
+<p class="sub">brže učitavanje od proseka — a svaka sekunda čekanja odnosi posetioce.</p>
+<p class="sec-note">Prosek: javna merenja za responzivne sajtove na mobilnim mrežama.</p>
+</div>
+<div class="card reveal">
+<h3 class="title3">Šta je uključeno u svaki prezentacioni sajt</h3>
+<p class="mt-2" style="margin-bottom:18px">Bez doplata i sitnih slova:</p>
+<ul class="checks"><li><strong>Dizajn po meri</strong> — bez kupljenih šablona koje viđate na svakom koraku.</li><li><strong>SEO osnova</strong> — struktura, meta podaci, schema markup i lokalna vidljivost.</li><li><strong>SSL i sigurnost</strong> — katanac u adresi i bezbednosna zaglavlja od prvog dana.</li><li><strong>Obuka i primopredaja</strong> — sadržaj menjate sami, pristupi pripadaju vama.</li><li><strong>Garantovan rok</strong> — rok iz ponude je rok isporuke.</li></ul>
+</div>
+</div>
+<div class="grid-4" style="margin-top:22px"><div class="stat reveal" style="color:var(--ink)"><b class="grad">od 300 €</b><span style="color:var(--ink-2)">cena sajta</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">1–2</b><span style="color:var(--ink-2)">nedelje izrade</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">95+</b><span style="color:var(--ink-2)">Lighthouse skor</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">24h</b><span style="color:var(--ink-2)">odgovor na upit</span></div></div>
+</div>
+</section>
 <section class="sec"><div class="wrap"><div class="sec-head reveal"><h2 class="headline">Česta pitanja o prezentacionim sajtovima.</h2></div><div class="faq"><details><summary>Koliko košta prezentacioni sajt?</summary><p>Prezentacioni sajt sa dizajnom po meri kreće od 300 €, a cena raste sa brojem stranica i posebnim zahtevima. U cenu je uključen dizajn, izrada, osnovni SEO, SSL i obuka — bez skrivenih troškova.</p></details><details><summary>Šta je prezentacioni sajt i da li mi je dovoljan?</summary><p>To je sajt koji predstavlja vaš posao: ko ste, šta radite, reference i kontakt — obično 5–10 stranica. Za većinu malih firmi, zanatlija i usluga to je sasvim dovoljno za početak; web shop ili rezervacije se lako dodaju kasnije.</p></details><details><summary>Koliko traje izrada prezentacionog sajta?</summary><p>Sa spremnim tekstovima i fotografijama: 1–2 nedelje. Ako sadržaj treba da se piše i sređuje, računajte još nekoliko dana — možemo i to da preuzmemo.</p></details><details><summary>Da li ću moći sam da menjam sadržaj?</summary><p>Da — sajt radimo tako da tekstove, slike i cenovnik menjate sami, a uz predaju dobijate i kratku obuku. Za veće izmene uvek smo tu.</p></details></div></div></section>
 <section class="sec sec-dark"><div class="wrap center">
 <div class="sec-head reveal"><span class="kicker">Naša garancija</span><h2 class="headline">Rok iz ponude je rok isporuke.</h2><p class="lede">Rok koji potpišemo u ponudi — ispunjavamo. Ako materijali zakasne sa vaše strane, novi rok dogovaramo otvoreno i unapred — ali naš deo posla uvek stiže na vreme.</p></div>
