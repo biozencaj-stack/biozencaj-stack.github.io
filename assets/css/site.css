@@ -524,6 +524,10 @@ html,body{overflow-x:hidden;overflow-x:clip}
 /* mobilni: hero mokap od ivice do ivice (krupniji prikaz) */
 @media (max-width:700px){
   .hero-shot .hs-wide{width:100%;max-width:none;margin:0}
+  /* laptop mokapi ~20% krupnije: kontejner full-bleed, slika 107vw —
+     višak je providan rub/rep senke, body overflow-x:clip ga guta bez skrola */
+  .hero-shot:has(.hs-main){max-width:none;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+  .hero-shot .hs-main{width:107vw;max-width:none}
 }
 
 /* flat UI slika u heroju (bez laptop mokapa): senka prati zaobljene uglove */

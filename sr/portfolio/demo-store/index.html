@@ -455,6 +455,9 @@ html,body{overflow-x:hidden;overflow-x:clip}
 }
 @media (max-width:700px){
   .hero-shot .hs-wide{width:100%;max-width:none;margin:0}
+  
+  .hero-shot:has(.hs-main){max-width:none;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+  .hero-shot .hs-main{width:107vw;max-width:none}
 }
 .hs-flat{width:min(100%,980px);height:auto;mix-blend-mode:normal !important;filter:drop-shadow(0 26px 54px rgba(0,0,0,.16))}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>
