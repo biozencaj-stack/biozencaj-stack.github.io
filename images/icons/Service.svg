@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Service</title>
-    <g id="Service" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M24,6 C31.7319865,6 38,12.2680135 38,20 L38,21 L40,21 L40,33 L34,33 L34,21 L36,21 L36,20 C36,13.372583 30.627417,8 24,8 C17.372583,8 12,13.372583 12,20 L12,21 L14,21 L14,33 L8,33 L8,21 L10,21 L10,20 C10,12.2680135 16.2680135,6 24,6 Z M12,23 L10,23 L10,31 L12,31 L12,23 Z M38,23 L36,23 L36,31 L38,31 L38,23 Z" id="Combined-Shape" fill="#007CFF" fill-rule="nonzero"></path>
-        <path d="M38,31 L38,35 C38,37.7614237 35.7614237,40 33,40 L29.7318119,40.0010775 C29.3858493,40.5982846 28.7398375,41 28,41 L22,41 C20.8954305,41 20,40.1045695 20,39 C20,37.8954305 20.8954305,37 22,37 L28,37 C28.7402524,37 29.3865739,37.4021661 29.7323937,37.9999275 L33,38 C34.6568542,38 36,36.6568542 36,35 L36,31 L38,31 Z" id="Combined-Shape" fill="#007CFF" fill-rule="nonzero" opacity="0.300000012"></path>
-    </g>
-</svg>

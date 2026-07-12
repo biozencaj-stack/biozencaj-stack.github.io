@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Structure</title>
-    <g id="Structure" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M31,21 L31,23 L39,23 L39,21 L31,21 Z M41,35 L41,41 L29,41 L29,35 L41,35 Z M39,37 L31,37 L31,39 L39,39 L39,37 Z M41,27 L41,33 L29,33 L29,27 L41,27 Z M39,29 L31,29 L31,31 L39,31 L39,29 Z M41,19 L41,25 L29,25 L29,19 L41,19 Z M26,7 L26,17 L7,17 L7,7 L26,7 Z M24,9 L9,9 L9,15 L24,15 L24,9 Z" id="Combined-Shape" fill="#007CFF" fill-rule="nonzero"></path>
-        <path d="M18,15 L18,21 L29,21 L29,23 L18,23 L18,29 L29,29 L29,31 L18,31 L18,37 L29,37 L29,39 L18,39 L18,44 L16,44 L16,15 L18,15 Z" id="Combined-Shape" fill="#007CFF" opacity="0.300000012"></path>
-    </g>
-</svg>
