@@ -561,6 +561,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="field"><label for="c-email">Email adresa *</label><input type="email" id="c-email" required autocomplete="email"/></div>
 <div class="field"><label for="c-note">Napomena <small>(opciono)</small></label><textarea id="c-note" rows="3" maxlength="2000" placeholder="Nešto što treba da znamo — delatnost, primeri sajtova koji vam se dopadaju..."></textarea></div>
 <label class="consent"><input type="checkbox" id="c-consent"/><span>Slažem se sa obradom podataka u svrhu odgovora na moj upit, u skladu sa <a href="/sr/politika-privatnosti/">politikom privatnosti</a>.</span></label>
+<div class="cf-turnstile" data-sitekey="0x4AAAAAAD0aqX_BWTMzIvsj" style="margin:14px 0"></div>
 <button class="btn btn-primary btn-submit" type="button" id="calc-send" disabled>Pošaljite mi ponudu — odgovaramo u roku od 24h</button>
 <p id="calc-status" role="status" aria-live="polite" class="mt-2"></p>
 </div>
@@ -645,7 +646,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
       body: JSON.stringify({
         name: name, email: email, phone: document.getElementById("c-phone").value.trim(),
         service: tip.service || "other", deadline: rok.deadline || "", budget: bud.budget || "",
-        message: poruka, locale: "sr", website: "", company: "", siteurl: "", source: ""
+        message: poruka, locale: "sr", website: "", company: "", siteurl: "", source: "", turnstile: (document.getElementsByName("cf-turnstile-response")[0]||{}).value||""
       })
     })
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
@@ -666,6 +667,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
   });
 })();
 </script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </main>
 <a class="orb" href="/sr/kalkulator-cene-sajta/" aria-label="Besplatna procena projekta">
 <span class="orb-ico" aria-hidden="true">✦</span>

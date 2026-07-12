@@ -718,6 +718,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 </div>
 <label class="consent"><input type="checkbox" id="d-consent"/><span>Slažem se sa obradom podataka u svrhu odgovora na moj upit, u skladu sa <a href="/sr/politika-privatnosti/">politikom privatnosti</a>.</span></label>
 <label class="consent"><input type="checkbox" id="d-copy"/><span>Pošaljite kopiju nacrta i meni na email.</span></label>
+<div class="cf-turnstile" data-sitekey="0x4AAAAAAD0aqX_BWTMzIvsj" style="margin:14px 0"></div>
 <button class="btn btn-primary btn-submit" type="button" id="d-send" disabled>Pošaljite nacrt — javljamo se u roku od 24h</button>
 <div class="mini-actions">
 <button class="btn btn-ghost" type="button" id="d-share">Kopiraj link na nacrt</button>
@@ -1184,7 +1185,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
       body: JSON.stringify({ name: name, email: email, phone: "",
         service: shop ? "webshops" : "websites",
         sendcopy: document.getElementById("d-copy").checked,
-        budget: "", deadline: "", message: msg, locale: "sr", website: "", company: "", siteurl: "", source: "" })
+        budget: "", deadline: "", message: msg, locale: "sr", website: "", company: "", siteurl: "", source: "", turnstile: (document.getElementsByName("cf-turnstile-response")[0]||{}).value||"" })
     })
       .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
       .then(function (res) {
@@ -1201,6 +1202,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
   });
 })();
 </script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </main>
 <a class="orb" href="/sr/kalkulator-cene-sajta/" aria-label="Besplatna procena projekta">
 <span class="orb-ico" aria-hidden="true">✦</span>
