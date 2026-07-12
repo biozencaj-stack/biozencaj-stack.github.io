@@ -241,12 +241,17 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .shot-card{display:block;color:inherit;background:#fff;border-radius:var(--r-card);overflow:hidden;border:1px solid rgba(0,0,0,.06);transition:transform .3s,box-shadow .3s}
 a.shot-card:hover{text-decoration:none}
 .shot-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.12)}
-.shot-card figure{aspect-ratio:8/5;overflow:hidden;background:var(--bg-alt)}
+.shot-card figure{aspect-ratio:8/5;overflow:hidden;background:var(--bg-alt);position:relative}
 .shot-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .shot-card:hover img{transform:scale(1.04)}
+.shot-card .shot-tel{position:absolute;right:12px;bottom:10px;width:auto;height:60%;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(0,0,0,.30))}
+.shot-card:hover .shot-tel{transform:scale(1.05)}
 .shot-meta{padding:20px 24px 24px}
-.shot-meta h3{font-size:1.125rem;font-weight:600;letter-spacing:-.01em}
+.shot-meta h3,.shot-meta h2{font-size:1.125rem;font-weight:600;letter-spacing:-.01em}
 .shot-meta p{font-size:.875rem;color:var(--ink-2);margin-top:2px}
+.shot-meta .shot-blurb{font-size:.9rem;line-height:1.5;margin:8px 0 0}
+.shot-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.shot-tags span{font-size:12px;font-weight:500;padding:4px 11px;border-radius:99px;background:var(--bg-alt);color:var(--ink-2);white-space:nowrap}
 .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:22px}
 .chip{font-size:.8125rem;font-weight:500;color:var(--ink-2);background:var(--bg-alt);border-radius:var(--r-pill);padding:6px 14px}
 .proj-shots{display:flex;gap:34px;align-items:center;justify-content:center}
@@ -546,23 +551,23 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="center"><a class="link-arrow" href="/sr/portfolio/concorde/">Pogledajte studiju slučaja</a></div>
 </div>
 </section><section class="sec sec-alt"><div class="wrap-wide"><div class="sec-head reveal"><span class="kicker">Portfolio</span><h2 class="headline">Izdvojeni projekti.</h2><p class="lede">Pogledajte neke od naših najnovijih radova.</p></div><div class="grid-3"><a class="shot-card reveal" href="/sr/portfolio/principshop/">
-<figure><img src="/images/portfolio/princip-g.webp" srcset="/images/portfolio/princip-g.webp 432w, /images/portfolio/princip-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Princip Shop – izrada WooCommerce web shopa za srpski modni brend" width="432" height="270" loading="lazy" decoding="async"/></figure>
-<div class="shot-meta"><h270>Princip Shop</h270><p>Web shop · Moda</p></div>
+<figure><img class="shot-desk" src="/images/portfolio/princip-g.webp" srcset="/images/portfolio/princip-g.webp 432w, /images/portfolio/princip-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Princip Shop – izrada WooCommerce web shopa za srpski modni brend" width="432" height="270" loading="lazy" decoding="async"/><img class="shot-tel" src="/images/portfolio/princip-tel2-lg.webp" alt="Princip Shop – mobilna verzija" width="420" height="875" loading="lazy" decoding="async"/></figure>
+<div class="shot-meta"><h3>Princip Shop</h3><p class="shot-cat">Web shop · Moda</p><p class="shot-blurb">WooCommerce sa ~70% razvoja po meri za srpski modni brend — više tržišta i kupovina skrojena za telefon.</p><div class="shot-tags"><span>WordPress</span><span>WooCommerce</span><span>Custom moduli</span></div></div>
 </a><a class="shot-card reveal" href="/sr/portfolio/planika/">
-<figure><img src="/images/portfolio/planika-g.webp" srcset="/images/portfolio/planika-g.webp 432w, /images/portfolio/planika-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Planika – izrada web shopa za poznatog srpskog proizvođača obuće" width="432" height="270" loading="lazy" decoding="async"/></figure>
-<div class="shot-meta"><h270>Planika</h270><p>Web shop · Obuća</p></div>
+<figure><img class="shot-desk" src="/images/portfolio/planika-g.webp" srcset="/images/portfolio/planika-g.webp 432w, /images/portfolio/planika-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Planika – izrada web shopa za poznatog srpskog proizvođača obuće" width="432" height="270" loading="lazy" decoding="async"/><img class="shot-tel" src="/images/portfolio/planika-tel2-lg.webp" alt="Planika – mobilna verzija" width="420" height="875" loading="lazy" decoding="async"/></figure>
+<div class="shot-meta"><h3>Planika</h3><p class="shot-cat">Web shop · Obuća</p><p class="shot-blurb">E-commerce sa custom CMS-om za brend sa 30+ prodavnica — online prodaja +150% u prvom kvartalu.</p><div class="shot-tags"><span>Next.js</span><span>React</span><span>Custom CMS</span></div></div>
 </a><a class="shot-card reveal" href="/sr/portfolio/lipo/">
-<figure><img src="/images/portfolio/lipo-g.webp" srcset="/images/portfolio/lipo-g.webp 432w, /images/portfolio/lipo-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Lipo Kozmetika – izrada web shopa za prirodnu kozmetiku" width="432" height="270" loading="lazy" decoding="async"/></figure>
-<div class="shot-meta"><h270>Lipo Kozmetika</h270><p>Web shop · Kozmetika</p></div>
+<figure><img class="shot-desk" src="/images/portfolio/lipo-g.webp" srcset="/images/portfolio/lipo-g.webp 432w, /images/portfolio/lipo-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Lipo Kozmetika – izrada web shopa za prirodnu kozmetiku" width="432" height="270" loading="lazy" decoding="async"/><img class="shot-tel" src="/images/portfolio/lipo-tel2-lg.webp" alt="Lipo Kozmetika – mobilna verzija" width="420" height="875" loading="lazy" decoding="async"/></figure>
+<div class="shot-meta"><h3>Lipo Kozmetika</h3><p class="shot-cat">Web shop · Kozmetika</p><p class="shot-blurb">Svetao web shop prirodne kozmetike — navigacija po tipu kože i aktivnom sastojku.</p><div class="shot-tags"><span>WordPress</span><span>WooCommerce</span><span>PHP</span></div></div>
 </a><a class="shot-card reveal" href="/sr/portfolio/barrique/">
-<figure><img src="/images/portfolio/barik-g.webp" srcset="/images/portfolio/barik-g.webp 432w, /images/portfolio/barik-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Barrique Đorđević – izrada sajta za proizvođača hrastove buradi" width="432" height="270" loading="lazy" decoding="async"/></figure>
-<div class="shot-meta"><h270>Barrique Đorđević</h270><p>Prezentacioni sajt · Proizvodnja buradi</p></div>
+<figure><img class="shot-desk" src="/images/portfolio/barik-g.webp" srcset="/images/portfolio/barik-g.webp 432w, /images/portfolio/barik-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Barrique Đorđević – izrada sajta za proizvođača hrastove buradi" width="432" height="270" loading="lazy" decoding="async"/><img class="shot-tel" src="/images/portfolio/barik-tel2-lg.webp" alt="Barrique Đorđević – mobilna verzija" width="420" height="875" loading="lazy" decoding="async"/></figure>
+<div class="shot-meta"><h3>Barrique Đorđević</h3><p class="shot-cat">Prezentacioni sajt · Proizvodnja buradi</p><p class="shot-blurb">Sajt manufakture hrastove buradi — četiri generacije zanata, serije od 120 do 500 litara.</p><div class="shot-tags"><span>WordPress</span><span>PHP</span><span>Custom tema</span></div></div>
 </a><a class="shot-card reveal" href="/sr/portfolio/uzmikredit/">
-<figure><img src="/images/portfolio/uzmikredit-g.webp" srcset="/images/portfolio/uzmikredit-g.webp 432w, /images/portfolio/uzmikredit-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="UzmiKredit – izrada sajta za posredovanje u kreditima" width="432" height="270" loading="lazy" decoding="async"/></figure>
-<div class="shot-meta"><h270>UzmiKredit</h270><p>Sajt za usluge · Finansije</p></div>
+<figure><img class="shot-desk" src="/images/portfolio/uzmikredit-g.webp" srcset="/images/portfolio/uzmikredit-g.webp 432w, /images/portfolio/uzmikredit-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="UzmiKredit – izrada sajta za posredovanje u kreditima" width="432" height="270" loading="lazy" decoding="async"/><img class="shot-tel" src="/images/portfolio/uzmikredit-tel2-lg.webp" alt="UzmiKredit – mobilna verzija" width="420" height="875" loading="lazy" decoding="async"/></figure>
+<div class="shot-meta"><h3>UzmiKredit</h3><p class="shot-cat">Sajt za usluge · Finansije</p><p class="shot-blurb">Platforma za kredite besplatna za korisnike — kalkulatori i forme koje kvalifikuju upit.</p><div class="shot-tags"><span>WordPress</span><span>PHP</span><span>Custom forme</span></div></div>
 </a><a class="shot-card reveal" href="/sr/portfolio/porta-royal/">
-<figure><img src="/images/portfolio/porta-royal-g.webp" srcset="/images/portfolio/porta-royal-g.webp 432w, /images/portfolio/porta-royal-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Porta Royal – izrada web shopa za sigurnosna i sobna vrata" width="432" height="270" loading="lazy" decoding="async"/></figure>
-<div class="shot-meta"><h270>Porta Royal</h270><p>Web shop · Enterijer</p></div>
+<figure><img class="shot-desk" src="/images/portfolio/porta-royal-g.webp" srcset="/images/portfolio/porta-royal-g.webp 432w, /images/portfolio/porta-royal-g-lg.webp 800w" sizes="(max-width: 640px) 92vw, (max-width: 980px) 46vw, 590px" alt="Porta Royal – izrada web shopa za sigurnosna i sobna vrata" width="432" height="270" loading="lazy" decoding="async"/><img class="shot-tel" src="/images/portfolio/porta-royal-tel2-lg.webp" alt="Porta Royal – mobilna verzija" width="420" height="875" loading="lazy" decoding="async"/></figure>
+<div class="shot-meta"><h3>Porta Royal</h3><p class="shot-cat">Web shop · Enterijer</p><p class="shot-blurb">Katalog sigurnosnih i sobnih vrata sa upitom za meru direktno sa stranice modela.</p><div class="shot-tags"><span>WordPress</span><span>WooCommerce</span><span>PHP</span></div></div>
 </a></div><div class="center mt-4"><a class="btn btn-ghost" href="/sr/portfolio/">Ceo portfolio</a></div></div></section><section class="sec sec-blue">
 <div class="wrap">
 <div class="sec-head reveal"><h2 class="headline">Brojevi govore.</h2></div>

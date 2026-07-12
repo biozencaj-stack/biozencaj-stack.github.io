@@ -241,12 +241,17 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .shot-card{display:block;color:inherit;background:#fff;border-radius:var(--r-card);overflow:hidden;border:1px solid rgba(0,0,0,.06);transition:transform .3s,box-shadow .3s}
 a.shot-card:hover{text-decoration:none}
 .shot-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,.12)}
-.shot-card figure{aspect-ratio:8/5;overflow:hidden;background:var(--bg-alt)}
+.shot-card figure{aspect-ratio:8/5;overflow:hidden;background:var(--bg-alt);position:relative}
 .shot-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .shot-card:hover img{transform:scale(1.04)}
+.shot-card .shot-tel{position:absolute;right:12px;bottom:10px;width:auto;height:60%;object-fit:contain;filter:drop-shadow(0 14px 22px rgba(0,0,0,.30))}
+.shot-card:hover .shot-tel{transform:scale(1.05)}
 .shot-meta{padding:20px 24px 24px}
-.shot-meta h3{font-size:1.125rem;font-weight:600;letter-spacing:-.01em}
+.shot-meta h3,.shot-meta h2{font-size:1.125rem;font-weight:600;letter-spacing:-.01em}
 .shot-meta p{font-size:.875rem;color:var(--ink-2);margin-top:2px}
+.shot-meta .shot-blurb{font-size:.9rem;line-height:1.5;margin:8px 0 0}
+.shot-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.shot-tags span{font-size:12px;font-weight:500;padding:4px 11px;border-radius:99px;background:var(--bg-alt);color:var(--ink-2);white-space:nowrap}
 .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:22px}
 .chip{font-size:.8125rem;font-weight:500;color:var(--ink-2);background:var(--bg-alt);border-radius:var(--r-pill);padding:6px 14px}
 .proj-shots{display:flex;gap:34px;align-items:center;justify-content:center}
