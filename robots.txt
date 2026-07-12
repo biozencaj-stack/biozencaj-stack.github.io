@@ -1,4 +1,2 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://sitevousplait.fr/sitemap.xml
+User-agent: *
+Disallow: /
