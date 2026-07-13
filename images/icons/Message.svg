@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Message</title>
+    <g id="Message" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M35,8 L35,20 L42,20 L42,40 L34.111084,36 L19,36 L19,30 L14.0754395,30 L6,34 L6,8 L35,8 Z M40,22 L35,21.999 L35,30 L21,30 L21,34 L34.5891534,34 L40,36.7435184 L40,22 Z M33,10 L8,10 L8,30.777436 L13.6072541,28 L33,28 L33,10 Z" id="Combined-Shape" fill="#007CFF" fill-rule="nonzero"></path>
+        <rect id="Rectangle-3" fill="#007CFF" opacity="0.300000012" x="12" y="15" width="17" height="2"></rect>
+        <rect id="Rectangle-3-Copy" fill="#007CFF" opacity="0.300000012" x="12" y="21" width="17" height="2"></rect>
+    </g>
+</svg>

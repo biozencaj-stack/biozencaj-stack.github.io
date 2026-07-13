@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#007CFF;}
+	.st1{opacity:0.3;fill:#007CFF;enable-background:new    ;}
+</style>
+<g id="Calendar">
+	<path id="Rectangle-23" class="st0" d="M7,12v26h34V12H7z M5,10h38v30H5V10z"/>
+	<path id="Combined-Shape" class="st0" d="M11,8h2v6h-2V8z M19,8h2v6h-2V8z M27,8h2v6h-2V8z M35,8h2v6h-2V8z"/>
+	<rect id="Rectangle-24" x="7" y="35" class="st0" width="34" height="2"/>
+	<path id="Combined-Shape_1_" class="st1" d="M12,30c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S13.1,30,12,30z M20,30c-1.1,0-2-0.9-2-2
+		s0.9-2,2-2s2,0.9,2,2S21.1,30,20,30z M28,22c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S29.1,22,28,22z M28,30c-1.1,0-2-0.9-2-2
+		s0.9-2,2-2s2,0.9,2,2S29.1,30,28,30z M36,22c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S37.1,22,36,22z"/>
+	<circle id="Oval-12-Copy" class="st0" cx="20" cy="20" r="2"/>
+</g>
+</svg>
