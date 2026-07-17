@@ -89,6 +89,8 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .orb.pop .orb-txt{max-width:240px;opacity:1}
 @keyframes orbPop{0%{transform:scale(1)}45%{transform:scale(1.28)}72%{transform:scale(.94)}100%{transform:scale(1)}}
 @media (max-width:700px){.orb{right:14px;bottom:14px;height:54px;width:54px}}
+/* orb ne sme da prekriva CTA u otvorenom mobilnom meniju */
+body:has(.m-nav.open) .orb{opacity:0;visibility:hidden;pointer-events:none}
 @media (prefers-reduced-motion:reduce){
   .orb{width:auto;padding:0 22px 0 16px;gap:10px}
   .orb .orb-txt{max-width:240px;opacity:1}

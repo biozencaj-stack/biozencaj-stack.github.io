@@ -103,6 +103,7 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .orb.pop .orb-txt{max-width:240px;opacity:1}
 @keyframes orbPop{0%{transform:scale(1)}45%{transform:scale(1.28)}72%{transform:scale(.94)}100%{transform:scale(1)}}
 @media (max-width:700px){.orb{right:14px;bottom:14px;height:54px;width:54px}}
+body:has(.m-nav.open) .orb{opacity:0;visibility:hidden;pointer-events:none}
 @media (prefers-reduced-motion:reduce){
   .orb{width:auto;padding:0 22px 0 16px;gap:10px}
   .orb .orb-txt{max-width:240px;opacity:1}
@@ -473,7 +474,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://izradawebsajta.co/en/"},{"@type":"ListItem","position":2,"name":"Portfolio","item":"https://izradawebsajta.co/en/portfolio/"},{"@type":"ListItem","position":3,"name":"Restoran Panorama","item":"https://izradawebsajta.co/en/portfolio/panorama/"}]}</script>
 <script>if(/(^|\.)izradawebsajta\.co$/.test(location.hostname)){window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-XS2MLEVMRP');document.addEventListener('click',function(e){var a=e.target&&e.target.closest&&e.target.closest('a[href^="tel:"],a[href^="viber:"]');if(a)gtag('event','contact_click',{method:a.getAttribute('href').indexOf('tel:')===0?'phone':'viber'});});var _tl=false;function _ld(){if(_tl)return;_tl=true;var gs=document.createElement('script');gs.async=true;gs.src='https://www.googletagmanager.com/gtag/js?id=G-XS2MLEVMRP';document.head.appendChild(gs);}['pointerdown','keydown','touchstart','scroll'].forEach(function(ev){addEventListener(ev,_ld,{once:true,passive:true})});setTimeout(_ld,3500);}</script>
-<script src="/assets/js/site.2.min.js" defer></script>
+<script src="/assets/js/site.3.min.js" defer></script>
 </head>
 <body>
 
