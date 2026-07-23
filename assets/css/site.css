@@ -62,7 +62,7 @@ button{font:inherit;cursor:pointer;background:none;border:none}
 .nav-lang a{color:var(--ink-2)}
 .nav-lang strong{color:var(--ink);font-weight:600}
 /* Dropdown (Usluge) */
-.has-sub{position:relative}
+.has-sub{position:relative;display:flex;align-items:center}
 .has-sub>a::after{content:"";display:inline-block;margin-left:6px;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s}
 .has-sub:hover>a::after,.has-sub:focus-within>a::after{transform:rotate(225deg) translateY(-2px)}
 .sub-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(6px);padding-top:16px;opacity:0;visibility:hidden;transition:opacity .22s,transform .22s,visibility .22s;z-index:60}
