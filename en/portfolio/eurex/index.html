@@ -138,6 +138,7 @@ body:has(.m-nav.open) .orb{opacity:0;visibility:hidden;pointer-events:none}
 .grad{background:linear-gradient(92deg,#0a84ff 0%,#7d5cff 45%,#bf5af2 70%,#ff375f 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-shot{position:relative;margin:44px auto -8px;max-width:1240px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
 .hero-shot a,.hero-shot picture{display:contents}
+.hero-shot source{display:none} 
 .hero-shot::before{content:"";position:absolute;inset:-14% -10% -20%;z-index:-1;pointer-events:none;border-radius:50%;
   background:radial-gradient(52% 58% at 38% 42%,rgba(10,132,255,.16),transparent 70%),
              radial-gradient(46% 52% at 66% 38%,rgba(191,90,242,.13),transparent 72%),
@@ -468,7 +469,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
   .hero-shot .hs-wide{width:100%;max-width:none;margin:0}
   
   .hero-shot:has(.hs-main){max-width:none;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
-  .hero-shot .hs-main{width:107vw;max-width:none}
+  .hero-shot .hs-main{width:107vw;max-width:none;flex:0 0 auto}
 }
 .hs-flat{width:min(100%,980px);height:auto;mix-blend-mode:normal !important;filter:drop-shadow(0 26px 54px rgba(0,0,0,.16))}</style>
 <noscript><style>.reveal{opacity:1;transform:none}.steps::before{transform:scaleX(1)}</style></noscript>

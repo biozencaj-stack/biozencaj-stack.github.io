@@ -133,6 +133,7 @@ body:has(.m-nav.open) .orb{opacity:0;visibility:hidden;pointer-events:none}
 /* ---------- Hero shot (uređaji na vrhu strane) ---------- */
 .hero-shot{position:relative;margin:44px auto -8px;max-width:1240px;display:flex;align-items:flex-end;justify-content:center;gap:28px;animation:heroRise .8s .42s cubic-bezier(.2,.7,.2,1) both}
 .hero-shot a,.hero-shot picture{display:contents}
+.hero-shot source{display:none} /* inače postaje prazan flex-item i gap ga računa (gura sliku udesno) */
 .hero-shot::before{content:"";position:absolute;inset:-14% -10% -20%;z-index:-1;pointer-events:none;border-radius:50%;
   background:radial-gradient(52% 58% at 38% 42%,rgba(10,132,255,.16),transparent 70%),
              radial-gradient(46% 52% at 66% 38%,rgba(191,90,242,.13),transparent 72%),
@@ -538,7 +539,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
   /* laptop mokapi ~20% krupnije: kontejner full-bleed, slika 107vw —
      višak je providan rub/rep senke, body overflow-x:clip ga guta bez skrola */
   .hero-shot:has(.hs-main){max-width:none;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
-  .hero-shot .hs-main{width:107vw;max-width:none}
+  .hero-shot .hs-main{width:107vw;max-width:none;flex:0 0 auto}
 }
 
 /* flat UI slika u heroju (bez laptop mokapa): senka prati zaobljene uglove */
