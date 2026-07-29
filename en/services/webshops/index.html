@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -535,6 +543,18 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="grid-4" style="margin-top:22px"><div class="stat reveal" style="color:var(--ink)"><b class="grad">70%</b><span style="color:var(--ink-2)">of purchases on mobile</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">24/7</b><span style="color:var(--ink-2)">your store is open</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">150%</b><span style="color:var(--ink-2)">sales growth (Planika)</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">3–8</b><span style="color:var(--ink-2)">weeks to launch</span></div></div>
 </div>
 </section>
+<section class="sec"><div class="wrap"><div class="prose prose-just reveal">
+<h2>Custom, WooCommerce or Shopify: which to choose?</h2>
+<p><strong>WooCommerce</strong> (WordPress) is the fastest route to a store for smaller catalogues and tighter budgets. You edit products yourself and the plugin ecosystem covers most needs. Its limit: as the catalogue and traffic grow, it demands steadily more optimisation and maintenance.</p>
+<p><strong>Shopify</strong> is a rented platform. It sets up quickly and runs reliably, but you pay a monthly subscription plus commissions, and customisation stops where the platform says it does. An excellent choice for brands selling abroad. That is how we built the store for the US brand Up&amp;Down Supplements.</p>
+<p><strong>A custom build</strong> (Next.js plus our own CMS) is our speciality for serious stores: the top speed Google rewards, features shaped around your actual processes, no monthly licences and no ceiling on growth. We used this approach for <a href="/en/portfolio/planika/">Planika</a> and for our <a href="/en/portfolio/demo-store/">demo e-commerce platform</a>.</p>
+
+<h2>How much an online store costs</h2>
+<p>A smaller WooCommerce shop starts at €1,000. A Shopify setup with custom design lands in a similar range, plus the platform subscription. A custom platform with its own CMS starts at €3,000 and moves with the features and integrations you need. Every price includes the SEO foundation, training and launch support, and the exact quote for your catalogue follows a free consultation. What drives the price is broken down in our guide to <a href="/en/blog/ecommerce-website-cost/">e-commerce website cost</a>, and all figures sit on the <a href="/en/pricing/">website pricing page</a>.</p>
+
+<h2>How the process works</h2>
+<p>We start with your catalogue and how you actually sell: what you sell, to whom, how you take payment and how you ship. From that we propose a platform and a concrete quote. Then come brand-led design, the build with every integration (payments, couriers, tax rules), a trial catalogue import and training for your team, and only then launch. Typical timeline: 4 to 6 weeks. That is how <a href="/en/portfolio/principshop/">Princip Shop</a> came about, with roughly 70% of the solution built to measure.</p>
+</div></div></section>
 <section class="sec sec-alt"><div class="wrap"><div class="sec-head reveal"><h2 class="headline">E-commerce FAQ.</h2></div><div class="faq"><details><summary>How much does an online store cost?</summary><p>Smaller WooCommerce stores start at €1,000; custom platforms from €3,000 depending on features and integrations. You get an exact quote after a free consultation.</p></details><details><summary>Which payment methods can I offer?</summary><p>Card payments through local and international processors, cash on delivery, bank transfer and PayPal, all fully compliant with your market's regulations.</p></details><details><summary>Can I manage products myself?</summary><p>Yes. You get an admin panel to manage products, prices, stock and orders, plus training so you never depend on us for daily operations.</p></details></div></div></section>
 <section class="sec sec-dark sec-cta-photo">
 <div class="wrap center reveal">

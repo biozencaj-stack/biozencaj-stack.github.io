@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -535,6 +543,18 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="grid-4" style="margin-top:22px"><div class="stat reveal" style="color:var(--ink)"><b class="grad">1</b><span style="color:var(--ink-2)">system instead of 5 tools</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">€0</b><span style="color:var(--ink-2)">per-seat licences</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">2 wks</b><span style="color:var(--ink-2)">to the first module</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">24h</b><span style="color:var(--ink-2)">support</span></div></div>
 </div>
 </section>
+<section class="sec"><div class="wrap"><div class="prose prose-just reveal">
+<h2>How to tell you need custom software</h2>
+<p>The most common sign: <strong>spreadsheets that have outgrown themselves</strong>. Records kept by three people in three versions, orders retyped from an email into a sheet and then into an invoice, reports that take days to assemble. Every one of those manual steps is time, errors and money, and those are exactly what custom software turns into automation.</p>
+<p>The second sign: <strong>off-the-shelf software that does 60% of the job</strong>, while you improvise the other 40%. You pay per-user licences for a tool you adapt to, instead of a tool that follows your processes. With custom software the equation is reversed: you pay for the build once, the software is yours, and it does exactly what you need, no more and no less.</p>
+<p>Typical projects we deliver: internal production or warehouse tracking connected to an online store, a CRM shaped around how your team actually sells, automatic generation of documents and reports, partner and client portals with access control, and integrations between systems that do not talk to each other. If any of that sounds familiar, <a href="/en/contact/">describe the process</a> and we will estimate it free of charge.</p>
+
+<h2>How much custom software costs</h2>
+<p>Custom software starts at €3,000, and the final figure depends on the number of modules, integrations and users. That sounds like a large investment until you compare it with the alternative: years of licence fees for a program that "roughly" does what you need, plus the hours of manual work automation would remove. Our approach: start with the smallest useful solution (an MVP) that saves time immediately, then extend it as real needs appear. Price ranges are on the <a href="/en/pricing/">website and software pricing page</a>.</p>
+
+<h2>A real example</h2>
+<p>Take <a href="/en/portfolio/moj-magacin/">Moj Magacin</a>, business software for warehouse management and invoicing, built with exactly this approach: first item records and invoices, the part that saves hours immediately, then reports, payment statuses and multi-user support. The software grows with the company instead of the company outgrowing it.</p>
+</div></div></section>
 <section class="sec sec-alt"><div class="wrap"><div class="sec-head reveal"><h2 class="headline">Custom software FAQ.</h2></div><div class="faq"><details><summary>How much does custom software cost?</summary><p>Smaller internal tools cost far less than a full ERP. After a free consultation you get a clear estimate. With phased delivery, first modules are often live within weeks.</p></details><details><summary>Which technologies do you use?</summary><p>Every technology: Next.js, React, Node.js, TypeScript, PHP, Java, PostgreSQL and more. We choose the stack to fit your project and existing systems.</p></details><details><summary>Do you maintain the software after delivery?</summary><p>Yes: maintenance, upgrades and support. Software is a living product and we grow it with your needs.</p></details></div></div></section>
 <section class="sec sec-dark sec-cta-photo">
 <div class="wrap center reveal">

@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -512,7 +520,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <tr><td>Korporativni sajt</td><td>Više stranica, višejezičnost, blog</td><td>od 800 €</td></tr>
 <tr><td>WooCommerce shop</td><td>Prodavnica sa plaćanjem i kuririma</td><td>od 1.000 €</td></tr>
 </table>
-<p>Naša ponuda počinje od nivoa "dizajn po meri" prilagođenog budžetu, jer sajt sa istim šablonom kao još sto sajtova ne gradi brend. Kompletan cenovnik je <a href="/sr/izrada-sajta-cena/">ovde</a>.</p>
+<p>Naša ponuda počinje od nivoa "dizajn po meri" prilagođenog budžetu, jer sajt sa istim šablonom kao još sto sajtova ne gradi brend. Kompletan pregled je na strani <a href="/sr/izrada-sajta-cena/">cena izrade sajta</a>.</p>
 <figure class="post-img reveal"><img src="/images/portfolio/mn89-m-lg.webp" srcset="/images/portfolio/mn89-m.webp 432w, /images/portfolio/mn89-m-656.webp 656w, /images/portfolio/mn89-m-lg.webp 800w" sizes="(max-width:764px) calc(100vw - 44px), 720px" alt="Primer WordPress sajta po meri: korporativni sajt MN89 na MacBook uređaju" width="800" height="500" loading="lazy" decoding="async"/></figure>
 <h2>Skriveni troškovi WordPress-a o kojima se ćuti</h2>
 <ul>

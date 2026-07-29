@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -502,13 +510,13 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="chips"><span class="chip">Next.js 16</span><span class="chip">React 19</span><span class="chip">PostgreSQL</span><span class="chip">Prisma</span><span class="chip">NextAuth</span><span class="chip">Tailwind CSS 4</span><span class="chip">Radix UI</span><span class="chip">NestPay</span></div>
 <div class="cta-row mt-4">
 <a class="btn btn-primary" href="/sr/kontakt/">Zatražite sličan projekat</a>
-<a class="btn btn-ghost" href="http://159.69.157.123" rel="noopener nofollow" target="_blank">Posetite sajt ↗</a>
+
 </div>
 </section>
 <section class="sec-tight"><div class="wrap-wide">
 <div class="proj-shots">
-<figure class="desk"><a href="http://159.69.157.123" rel="noopener nofollow" target="_blank"><img src="/images/portfolio/demo-store-g-lg.webp" srcset="/images/portfolio/demo-store-g.webp 432w, /images/portfolio/demo-store-g-656.webp 656w, /images/portfolio/demo-store-g-lg.webp 800w" sizes="(max-width:700px) calc(100vw - 44px), 950px" alt="Demo internet prodavnica sa CMS-om – izrada web shopa po meri" width="800" height="500" loading="eager" fetchpriority="high" decoding="async"/></a></figure>
-<figure class="phone"><a href="http://159.69.157.123" rel="noopener nofollow" target="_blank"><img src="/images/portfolio/artikal-lg.webp" alt="Demo E-Commerce CMS – mobilni prikaz" width="224" height="448" loading="lazy" decoding="async"/></a></figure>
+<figure class="desk"><img src="/images/portfolio/demo-store-g-lg.webp" srcset="/images/portfolio/demo-store-g.webp 432w, /images/portfolio/demo-store-g-656.webp 656w, /images/portfolio/demo-store-g-lg.webp 800w" sizes="(max-width:700px) calc(100vw - 44px), 950px" alt="Demo internet prodavnica sa CMS-om – izrada web shopa po meri" width="800" height="500" loading="eager" fetchpriority="high" decoding="async"/></figure>
+<figure class="phone"><img src="/images/portfolio/artikal-lg.webp" alt="Demo E-Commerce CMS – mobilni prikaz" width="224" height="448" loading="lazy" decoding="async"/></figure>
 </div>
 </div></section>
 <section class="sec-tight"><div class="wrap"><div class="prose prose-just reveal">

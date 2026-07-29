@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -561,7 +569,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 </section>
 <section class="sec"><div class="wrap"><div class="prose prose-just reveal">
 <h2>Cena izrade web shopa</h2>
-<p>Funkcionalna prodavnica sa dizajnom po meri, kartičnim plaćanjem i kurirskom integracijom košta od 1.000 €; veći shopovi sa ERP vezama i B2B cenama od 2.500 €, a platforme po meri od 5.000 € naviše. Detaljnu računicu (uključujući fiskalizaciju, provizije plaćanja i troškove posle izrade) napisali smo u vodiču <a href="/sr/blog/cena-izrade-web-shopa/">cena izrade web shopa</a>, a sve cene su i na <a href="/sr/izrada-sajta-cena/">cenovniku</a>.</p>
+<p>Funkcionalna prodavnica sa dizajnom po meri, kartičnim plaćanjem i kurirskom integracijom košta od 1.000 €; veći shopovi sa ERP vezama i B2B cenama od 2.500 €, a platforme po meri od 5.000 € naviše. Detaljnu računicu (uključujući fiskalizaciju, provizije plaćanja i troškove posle izrade) napisali smo u vodiču <a href="/sr/blog/cena-izrade-web-shopa/">cena izrade web shopa</a>, a sve cene stoje i na strani <a href="/sr/izrada-sajta-cena/">cena izrade web shopa</a>.</p>
 <h2>Kako izgleda proces</h2>
 <p>Prvo razgovaramo o asortimanu i načinu prodaje (šta prodajete, kome, kako naplaćujete i šaljete), pa predlažemo platformu i konkretnu ponudu. Slede dizajn prilagođen brendu, izrada sa svim integracijama (plaćanje, kuriri, fiskalizacija), unos probnog asortimana i obuka vašeg tima, pa tek onda pokretanje. Standardan rok: 4–6 nedelja. Ovako je nastala i prodavnica <a href="/sr/portfolio/principshop/">Princip Shop</a>, sa oko 70% rešenja rađenog po meri.</p>
 </div></div></section>

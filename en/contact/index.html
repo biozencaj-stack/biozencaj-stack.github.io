@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -498,6 +506,14 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <section class="hero wrap"><h1 class="display">Contact us.</h1>
 <p class="lede">Describe your project (type, budget and timeline) and we reply within 24 hours with a concrete proposal.</p>
 <p class="mt-2"><a href="/en/website-draft/">Prefer a few clicks? Draft your website ›</a></p></section>
+<section class="sec-tight"><div class="wrap">
+<div class="quick-contact">
+<a class="qc-btn" href="tel:+38166410350"><img src="/images/icons/Phone.svg" alt="" width="22" height="22" loading="lazy" aria-hidden="true"/><span><b>Call us</b><small>+381 66 410 350</small></span></a>
+<a class="qc-btn" href="viber://chat?number=%2B38166410350"><img src="/images/icons/Phone.svg" alt="" width="22" height="22" loading="lazy" aria-hidden="true"/><span><b>Viber / WhatsApp</b><small>Usually a reply within hours</small></span></a>
+<a class="qc-btn" href="mailto:info@izradawebsajta.co"><img src="/images/icons/Email.svg" alt="" width="22" height="22" loading="lazy" aria-hidden="true"/><span><b>Email us</b><small>info@izradawebsajta.co</small></span></a>
+</div>
+<p class="qc-note">Or fill in the form below: the more detail, the more precise the estimate.</p>
+</div></section>
 <section class="sec-tight"><div class="wrap"><div class="form-grid">
 <form id="contact-form" novalidate>
 <div class="hp" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"/></div>
@@ -566,6 +582,18 @@ html,body{overflow-x:hidden;overflow-x:clip}
 </dl>
 </aside>
 </div></div></section>
+<section class="sec sec-alt"><div class="wrap">
+<div class="sec-head reveal"><h2 class="headline">What happens after you send it?</h2></div>
+<div class="grid-3">
+<div class="card card-white reveal"><h3 class="title3">1. We reply within 24h</h3><p>We read the inquiry and come back with first questions or a straight estimate, usually within a few hours on working days.</p></div>
+<div class="card card-white reveal"><h3 class="title3">2. A short conversation</h3><p>By phone, Viber or email, whichever suits you. The goal is to understand what the project has to achieve.</p></div>
+<div class="card card-white reveal"><h3 class="title3">3. A quote in writing</h3><p>You get a concrete proposal with price, timeline and exact scope, then decide without any pressure.</p></div>
+</div>
+<div class="mt-4"><blockquote class="quote-card reveal"><p>Profesionalni, ažurni, PREBRZI, i temeljni. Sve na jednom mestu! Svaka preporuka!</p><footer><b>Petar Savić</b><span class="stars" style="color:#fbbc04;letter-spacing:2px">★★★★★</span> · Google recenzija</footer></blockquote></div>
+</div></section>
+<section class="sec sec-dark"><div class="wrap center">
+<div class="sec-head reveal"><span class="kicker">Our guarantee</span><h2 class="headline">The deadline in the quote is the delivery date.</h2><p class="lede">We meet the deadline we sign in the quote. If materials arrive late from your side, we agree a new date openly and in advance, but our part of the work always lands on time.</p></div>
+</div></section>
 </main>
 
 <footer class="footer">

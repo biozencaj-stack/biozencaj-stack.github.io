@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -546,7 +554,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 </section>
 <section class="sec sec-alt"><div class="wrap"><div class="prose prose-just reveal">
 <h2>Cena izrade mobilne aplikacije</h2>
-<p>MVP aplikacija (najmanji koristan proizvod za validaciju ideje) kreće od 4.500 €, aplikacije sa nalozima, plaćanjima i administracijom od 8.000 €, a kompleksne platforme se procenjuju po projektu. Detaljna računica sa svim stavkama je u vodiču <a href="/sr/blog/cena-izrade-mobilne-aplikacije/">cena izrade mobilne aplikacije</a>, a okviri i na <a href="/sr/izrada-sajta-cena/">cenovniku</a>. Radimo u Flutter-u i React Native-u: jedna baza koda za iOS i Android, što praktično prepolovljuje trošak u odnosu na dva odvojena razvoja.</p>
+<p>MVP aplikacija (najmanji koristan proizvod za validaciju ideje) kreće od 4.500 €, aplikacije sa nalozima, plaćanjima i administracijom od 8.000 €, a kompleksne platforme se procenjuju po projektu. Detaljna računica sa svim stavkama je u vodiču <a href="/sr/blog/cena-izrade-mobilne-aplikacije/">cena izrade mobilne aplikacije</a>, a okviri i na strani <a href="/sr/izrada-sajta-cena/">cena izrade sajta</a>. Radimo u Flutter-u i React Native-u: jedna baza koda za iOS i Android, što praktično prepolovljuje trošak u odnosu na dva odvojena razvoja.</p>
 <h2>Primer iz prakse</h2>
 <p>Aplikacija <a href="/sr/portfolio/termin/">Termin</a> (zakazivanje termina u salonima sa pretragom, kalendarom slobodnih termina i podsetnicima) pokazuje naš pristup: jednostavno za korisnika, praktično za biznis, sa backendom i panelom za osoblje. Od ideje do objave na App Store i Google Play vodimo ceo proces.</p>
 </div></div></section>

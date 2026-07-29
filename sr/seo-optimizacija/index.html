@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -519,7 +527,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 </div></section>
 <section class="sec"><div class="wrap"><div class="prose prose-just reveal">
 <h2>Cena SEO optimizacije</h2>
-<p>Jednokratne usluge: <strong>SEO audit</strong> sa konkretnim planom šta i kojim redom popraviti, od 200 €; <strong>tehnička optimizacija</strong> postojećeg sajta (brzina, struktura, meta podaci, schema), od 300 €. <strong>Kontinuirana optimizacija</strong> (sadržaj, praćenje pozicija, lokalni SEO i mesečni izveštaji) od 150 € mesečno, a konačna cifra zavisi od konkurencije u branši: nije isto rangirati se za usku zanatsku uslugu i za "prodaja stanova Beograd". Pošten okvir za sve usluge je na našem <a href="/sr/izrada-sajta-cena/">cenovniku</a>.</p>
+<p>Jednokratne usluge: <strong>SEO audit</strong> sa konkretnim planom šta i kojim redom popraviti, od 200 €; <strong>tehnička optimizacija</strong> postojećeg sajta (brzina, struktura, meta podaci, schema), od 300 €. <strong>Kontinuirana optimizacija</strong> (sadržaj, praćenje pozicija, lokalni SEO i mesečni izveštaji) od 150 € mesečno, a konačna cifra zavisi od konkurencije u branši: nije isto rangirati se za usku zanatsku uslugu i za "prodaja stanova Beograd". Pošten okvir za sve usluge stoji na strani <a href="/sr/izrada-sajta-cena/">cena izrade sajta i SEO-a</a>.</p>
 <h2>Zašto SEO, a ne (samo) oglasi</h2>
 <p>Oglasi rade odmah, ali prestaju istog trenutka kad prestanete da plaćate. SEO radi sporije, ali gradi imovinu: pozicija koju osvojite donosi posete svakog dana, bez računa za klik. Najzdravija kombinacija za većinu biznisa: oglasi za brz start, SEO za dugoročno smanjenje troška po upitu. Ako morate da birate jedno, izaberite ono što posle godinu dana i dalje radi za vas.</p>
 <p>Bitna napomena o očekivanjima: SEO rezultati se grade mesecima, a ne danima, i zavise i od sajta (zato je važno da je tehnički zdrav; ako nije, prvo sredimo to, po potrebi kroz <a href="/sr/odrzavanje-sajta/">održavanje</a> ili redizajn). Nikome ne garantujemo "prvo mesto", garantujemo pošten rad, merljive izveštaje i metode koje Google dozvoljava.</p>

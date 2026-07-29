@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -534,6 +542,18 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="grid-4" style="margin-top:22px"><div class="stat reveal" style="color:var(--ink)"><b class="grad">2</b><span style="color:var(--ink-2)">platforms, 1 codebase</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">-40%</b><span style="color:var(--ink-2)">development cost</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">100%</b><span style="color:var(--ink-2)">code ownership</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">24h</b><span style="color:var(--ink-2)">response</span></div></div>
 </div>
 </section>
+<section class="sec"><div class="wrap"><div class="prose prose-just reveal">
+<h2>What drives the price of a mobile app</h2>
+<p>The biggest factor is not the number of screens, it is <strong>how much logic sits behind them</strong>. An app that displays content and sends notifications is one level of work; an app with user accounts, payments, maps and real-time sync is another entirely. That is why, before any estimate, we sketch out what the app actually does, screen by screen, and only then talk numbers.</p>
+<p>The second factor is the <strong>backend</strong>. If the app has accounts, content that changes or communication between users, it needs a server side: a database, an API and an admin panel. We build both halves, so you get one team and one line of responsibility instead of juggling vendors. And because we work in Flutter and React Native, a single codebase covers both iOS and Android, which in practice means a 30 to 40% lower price than two separate native builds.</p>
+<p>The app types we build most often: ordering and booking apps, internal apps for field teams (delivery, servicing, stocktaking), apps that accompany an online store, and MVP versions for startups testing an idea before the big investment. Your idea does not have to be fully formed. <a href="/en/contact/">Tell us about it</a> and we will help shape it.</p>
+
+<h2>How much a mobile app costs</h2>
+<p>An MVP app, the smallest useful product for validating an idea, starts at €4,500. Apps with accounts, payments and an admin panel start at €8,000, and complex platforms are quoted per project. The detailed breakdown is in our guide to <a href="/en/blog/mobile-app-development-cost/">mobile app development cost</a>, with ranges also on the <a href="/en/pricing/">pricing page</a>. We work in Flutter and React Native: one codebase for iOS and Android, which practically halves the cost compared with two separate builds.</p>
+
+<h2>A real example</h2>
+<p>The <a href="/en/portfolio/termin/">Termin</a> app, salon appointment booking with search, a calendar of free slots and reminders, shows our approach: simple for the user, practical for the business, with a backend and a staff panel behind it. We run the whole process, from idea to publishing on the App Store and Google Play.</p>
+</div></div></section>
 <section class="sec"><div class="wrap"><div class="sec-head reveal"><h2 class="headline">Mobile app FAQ.</h2></div><div class="faq"><details><summary>How much does a mobile app cost?</summary><p>It depends on screens, features and integrations. Cross-platform development (Flutter/React Native) typically costs 30–40% less than two native apps. Free estimate for your idea.</p></details><details><summary>Does one app work on both iPhone and Android?</summary><p>Yes. We use Flutter and React Native: one codebase, both platforms, native performance and look.</p></details><details><summary>Do you publish to the App Store and Google Play?</summary><p>Yes. We handle the entire publishing process under your accounts. The app remains fully yours.</p></details></div></div></section>
 <section class="sec sec-dark sec-cta-photo">
 <div class="wrap center reveal">

@@ -398,6 +398,14 @@ a.shot-card:hover{text-decoration:none}
 .btn-submit{width:100%;border-radius:14px;padding:15px}
 .btn-submit:disabled{opacity:.45;cursor:not-allowed}
 .hp{position:absolute !important;left:-9999px !important;width:1px;height:1px;overflow:hidden}
+.quick-contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qc-btn{display:flex;align-items:center;gap:12px;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r-card);background:#fff;color:var(--ink);transition:border-color .2s,box-shadow .2s,transform .2s}
+.qc-btn:hover{text-decoration:none;border-color:var(--accent);box-shadow:0 10px 26px rgba(0,0,0,.07);transform:translateY(-2px)}
+.qc-btn img{flex:none}
+.qc-btn b{display:block;font-size:1rem;font-weight:600;line-height:1.25}
+.qc-btn small{display:block;font-size:.8125rem;color:var(--ink-2);margin-top:2px}
+.qc-note{margin-top:16px;text-align:center;color:var(--ink-2);font-size:.9375rem}
+@media (max-width:760px){.quick-contact{grid-template-columns:1fr;gap:10px}.qc-btn{padding:14px 16px}}
 .info-card{background:var(--bg-alt);border-radius:var(--r-card);padding:30px 28px}
 .info-card h2{font-size:1.25rem;margin-bottom:18px}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
@@ -534,6 +542,22 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="grid-4" style="margin-top:22px"><div class="stat reveal" style="color:var(--ink)"><b class="grad">95+</b><span style="color:var(--ink-2)">Lighthouse score</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">€0</b><span style="color:var(--ink-2)">monthly licences</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">0.8s</b><span style="color:var(--ink-2)">typical load</span></div><div class="stat reveal" style="color:var(--ink)"><b class="grad">100%</b><span style="color:var(--ink-2)">code ownership</span></div></div>
 </div>
 </section>
+<section class="sec"><div class="wrap"><div class="prose prose-just reveal">
+<h2>When Next.js actually pays off</h2>
+<p>If your site is a digital business card you update once a year, Next.js is probably more than you need. Honestly, <a href="/en/services/wordpress/">WordPress</a> will do that job for less. But there are situations where Next.js is not a luxury, it is arithmetic:</p>
+<ul>
+<li><strong>You live off Google search</strong>: when every position is money, speed and clean Core Web Vitals are an edge competitors on template sites cannot catch.</li>
+<li><strong>You have a large catalogue</strong>: hundreds of products or services that must load instantly and rank individually. Every catalogue page becomes an entry point from search.</li>
+<li><strong>You are planning to grow</strong>: what starts as a website becomes a shop, then a platform with user accounts. Next.js grows without a rebuild or a migration.</li>
+<li><strong>You are done with licences</strong>: no monthly fees for themes, plugins or platforms. The code is yours.</li>
+</ul>
+
+<h2>How much a Next.js site costs</h2>
+<p>A business Next.js site starts at €800. A site with a CMS for editing content yourself starts at €2,000. E-commerce and custom platforms start at €3,000. That is more than a template, and it should be: the price includes what a template will never have, namely the speed Google measures and rewards, architecture that grows with you, and zero licence costs. We will do the maths for your case <a href="/en/contact/">free of charge</a>, and all figures sit on the <a href="/en/pricing/">website pricing page</a>.</p>
+
+<h2>Who Next.js is right for</h2>
+<p>For businesses that live off organic traffic and brands for which a templated look is not an option. That is how we built <a href="/en/portfolio/concorde/">Concorde Group</a>, a corporate site for a global real-estate investor, and <a href="/en/portfolio/planika/">Planika</a>, an online store with a custom CMS for a brand with 30+ retail stores. If you are torn between technologies, read our honest comparison of <a href="/en/blog/wordpress-vs-nextjs/">WordPress and Next.js</a>, or describe the project and we will tell you which one is worth it for you.</p>
+</div></div></section>
 <section class="sec"><div class="wrap"><div class="sec-head reveal"><h2 class="headline">Next.js FAQ.</h2></div><div class="faq"><details><summary>Why is a Next.js site faster?</summary><p>Next.js pre-renders pages into static HTML, so they load almost instantly, with no waiting for servers and databases on every visit. Speed is an official Google ranking factor.</p></details><details><summary>Can I edit content on a Next.js site?</summary><p>Yes. We integrate a custom CMS when you need frequent updates, as we did for Planika's store. For rarely-updated sites, we handle changes as part of maintenance.</p></details><details><summary>When is Next.js worth it?</summary><p>When search rankings drive your revenue, when you have a large catalogue, or when you're building something that will grow. Next.js scales without replatforming.</p></details></div></div></section>
 <section class="sec sec-dark sec-cta-photo">
 <div class="wrap center reveal">
