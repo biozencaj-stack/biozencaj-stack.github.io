@@ -455,6 +455,9 @@ a.shot-card:hover{text-decoration:none}
 .info-card dt{font-size:.8125rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-2);margin-top:16px}
 .info-card dd{font-size:1.0625rem;margin-top:2px}
 .info-card dd a{color:var(--ink);font-weight:500}
+.map-list{columns:2;column-gap:40px;margin:0 0 8px;padding:0}
+.map-list li{margin:0 0 8px;break-inside:avoid}
+@media (max-width:700px){.map-list{columns:1}}
 .map-link{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:.9375rem}
 .map-link a{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:500}
 
