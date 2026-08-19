@@ -156,6 +156,7 @@
           if (res.ok && res.d && res.d.success) {
             if (window.gtag) gtag("event", "lead_contact");
             status.style.color = "#157f3d"; status.textContent = res.d.message || T.ok; form.reset();
+            window.location.href = isEN ? "/en/thank-you/" : "/sr/hvala/"; /* Ads konverziona strana */
           } else {
             status.style.color = "#c2281d";
             status.textContent = (res.d && ((res.d.details && res.d.details[0]) || res.d.error)) || T.err;
