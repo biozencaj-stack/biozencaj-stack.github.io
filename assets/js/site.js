@@ -6,7 +6,7 @@
 
   /* ---------- Header: sakrij pri skrolu nadole, prikaži nagore ---------- */
   var nav = document.querySelector(".nav");
-  var lastY = window.scrollY;
+  var lastY = 0; /* ne čitati scrollY na parse-u (forced reflow) */
   var burger = document.querySelector(".nav-burger");
   var panel = document.getElementById("m-nav");
   if (nav) {
@@ -87,7 +87,7 @@
   /* ---------- Orb: prati skrol i iskače u CTA ---------- */
   var orb = document.querySelector(".orb");
   if (orb && !noMotion) {
-    var orbY = 0, orbT = 0, orbLast = window.scrollY, popped = false;
+    var orbY = 0, orbT = 0, orbLast = 0, popped = false;
     window.addEventListener("scroll", function () {
       var y = window.scrollY;
       orbT = Math.max(-16, Math.min(16, (y - orbLast) * 0.35));
@@ -147,16 +147,18 @@
           service: val("service"), message: val("message"),
           company: val("company"), budget: val("budget"),
           deadline: val("deadline"), siteurl: val("siteurl"), source: val("source"),
-          locale: isEN ? "en" : "sr", website: ""
+          locale: isEN ? "en" : "sr", website: "",
+          turnstile: (document.getElementsByName("cf-turnstile-response")[0] || {}).value || ""
         })
       })
         .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
         .then(function (res) {
           if (res.ok && res.d && res.d.success) {
+            if (window.gtag) gtag("event", "lead_contact");
             status.style.color = "#157f3d"; status.textContent = res.d.message || T.ok; form.reset();
           } else {
             status.style.color = "#c2281d";
-            status.textContent = (res.d && (res.d.error || (res.d.details && res.d.details[0]))) || T.err;
+            status.textContent = (res.d && ((res.d.details && res.d.details[0]) || res.d.error)) || T.err;
           }
         })
         .catch(function () { status.style.color = "#c2281d"; status.textContent = T.net; })
