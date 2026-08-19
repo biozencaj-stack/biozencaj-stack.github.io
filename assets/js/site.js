@@ -139,7 +139,7 @@
       status.style.color = "inherit";
       status.textContent = T.sending;
       submitBtn.disabled = true;
-      fetch("/api/contact.php", {
+      fetch("/posalji", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
