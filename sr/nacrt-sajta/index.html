@@ -741,6 +741,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="field-row">
 <div class="field"><label for="d-name">Ime i prezime *</label><input type="text" id="d-name" required minlength="2" maxlength="100" autocomplete="name"/></div>
 <div class="field"><label for="d-email">Email adresa *</label><input type="email" id="d-email" required autocomplete="email"/></div>
+<div class="field"><label for="d-phone">Telefon *</label><input type="tel" id="d-phone" required minlength="6" maxlength="30" autocomplete="tel"/></div>
 </div>
 <label class="consent"><input type="checkbox" id="d-consent"/><span>Slažem se sa obradom podataka u svrhu odgovora na moj upit, u skladu sa <a href="/sr/politika-privatnosti/">politikom privatnosti</a>.</span></label>
 <label class="consent"><input type="checkbox" id="d-copy"/><span>Pošaljite kopiju nacrta i meni na email.</span></label>
@@ -1184,8 +1185,9 @@ html,body{overflow-x:hidden;overflow-x:clip}
     var st = document.getElementById("d-status");
     var name = document.getElementById("d-name").value.trim();
     var email = document.getElementById("d-email").value.trim();
-    if (name.length < 2 || !/.+@.+\..+/.test(email)) {
-      st.style.color = "#c2281d"; st.textContent = "Unesite ime i ispravnu email adresu."; return;
+    var phone = document.getElementById("d-phone").value.trim();
+    if (name.length < 2 || !/.+@.+\..+/.test(email) || phone.replace(/\D/g, "").length < 6) {
+      st.style.color = "#c2281d"; st.textContent = "Unesite ime, ispravnu email adresu i broj telefona."; return;
     }
     if (document.getElementById("website").value) return;
     var shop = state.tip === "Web shop";
@@ -1208,7 +1210,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
     st.style.color = "inherit"; st.textContent = "Slanje…"; send.disabled = true;
     fetch("/posalji", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name: name, email: email, phone: "",
+      body: JSON.stringify({ name: name, email: email, phone: phone,
         service: shop ? "webshops" : "websites",
         sendcopy: document.getElementById("d-copy").checked,
         budget: "", deadline: "", message: msg, locale: "sr", website: "", company: "", siteurl: "", source: "", turnstile: (document.getElementsByName("cf-turnstile-response")[0]||{}).value||"" })

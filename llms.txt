@@ -1,0 +1,53 @@
+# IzradaWebSajta.co
+
+> Web development agency from Belgrade, Serbia (Just 4 you d.o.o, since 2016, 500+
+> delivered projects). Websites, e-commerce, custom software, mobile apps and AI
+> solutions for clients in Serbia, Europe and the US. Guaranteed delivery date:
+> the deadline in the quote is the delivery deadline. Site is bilingual: Serbian
+> (/sr/) and English (/en/).
+
+Prices start from: business website €500, corporate €800, e-commerce €1,000,
+custom CMS platform €3,000, custom software €3,000, mobile app €4,500,
+AI chatbot €500 + €50/month. Free quote within 24h: https://izradawebsajta.co/en/contact/
+
+## Services (English)
+
+- [Services overview](https://izradawebsajta.co/en/services/)
+- [Pricing](https://izradawebsajta.co/en/pricing/)
+- [Business websites](https://izradawebsajta.co/en/business-websites/)
+- [E-commerce development](https://izradawebsajta.co/en/services/webshops/)
+- [WordPress development](https://izradawebsajta.co/en/services/wordpress/)
+- [Next.js development](https://izradawebsajta.co/en/services/nextjs/)
+- [Custom software](https://izradawebsajta.co/en/custom-software/)
+- [Custom CMS development](https://izradawebsajta.co/en/custom-cms/)
+- [Portal development](https://izradawebsajta.co/en/portal-development/)
+- [SaaS development](https://izradawebsajta.co/en/saas-development/)
+- [E-learning platforms](https://izradawebsajta.co/en/elearning-platforms/)
+- [Mobile app development](https://izradawebsajta.co/en/mobile-app-development/)
+- [AI chatbot](https://izradawebsajta.co/en/ai-chatbot/)
+- [AI business automation](https://izradawebsajta.co/en/ai-automation/)
+- [Web design](https://izradawebsajta.co/en/web-design/)
+- [Website migration](https://izradawebsajta.co/en/website-migration/)
+- [Website maintenance](https://izradawebsajta.co/en/website-maintenance/)
+- [SEO services](https://izradawebsajta.co/en/seo/)
+- [Portfolio, 36 projects](https://izradawebsajta.co/en/portfolio/)
+
+## Usluge (srpski)
+
+- [Sve usluge](https://izradawebsajta.co/sr/usluge/)
+- [Cenovnik](https://izradawebsajta.co/sr/izrada-sajta-cena/)
+- [Izrada sajtova Beograd](https://izradawebsajta.co/sr/izrada-sajtova-beograd/)
+- [Izrada web shopa](https://izradawebsajta.co/sr/izrada-web-shopa/)
+- [Izrada softvera po meri](https://izradawebsajta.co/sr/izrada-softvera/)
+- [Izrada mobilnih aplikacija](https://izradawebsajta.co/sr/izrada-mobilnih-aplikacija/)
+- [AI chatbot za sajt](https://izradawebsajta.co/sr/ai-chatbot-za-sajt/)
+- [Portfolio](https://izradawebsajta.co/sr/portfolio/)
+- [Blog: vodiči o cenama](https://izradawebsajta.co/sr/blog/)
+
+## Company
+
+- Legal name: Just 4 you d.o.o, Belgrade, Serbia (VAT/PIB 109611054, reg. MB 21210307)
+- Contact: info@izradawebsajta.co, +381 66 410 350 (phone/Viber), Mon-Fri 9:00-17:00 CET
+- Notable work: e-commerce for footwear brand Planika (30+ retail stores), fashion
+  brand Princip Shop, clinic management system, delivery-tracking app Kore,
+  ISO consultants Certiwa (site + client portal, Sweden)

@@ -582,7 +582,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
 <div class="hp" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" tabindex="-1" autocomplete="off"/></div>
 <div class="field-row">
 <div class="field"><label for="c-name">Ime i prezime *</label><input type="text" id="c-name" required minlength="2" maxlength="100" autocomplete="name"/></div>
-<div class="field"><label for="c-phone">Telefon <small>(opciono)</small></label><input type="tel" id="c-phone" autocomplete="tel"/></div>
+<div class="field"><label for="c-phone">Telefon *</label><input type="tel" id="c-phone" required minlength="6" maxlength="30" autocomplete="tel"/></div>
 </div>
 <div class="field"><label for="c-email">Email adresa *</label><input type="email" id="c-email" required autocomplete="email"/></div>
 <div class="field"><label for="c-note">Napomena <small>(opciono)</small></label><textarea id="c-note" rows="3" maxlength="2000" placeholder="Nešto što treba da znamo: delatnost, primeri sajtova koji vam se dopadaju..."></textarea></div>
@@ -652,8 +652,9 @@ html,body{overflow-x:hidden;overflow-x:clip}
     var status = document.getElementById("calc-status");
     var name = document.getElementById("c-name").value.trim();
     var email = document.getElementById("c-email").value.trim();
-    if (name.length < 2 || !/.+@.+\..+/.test(email)) {
-      status.style.color = "#c2281d"; status.textContent = "Unesite ime i ispravnu email adresu."; return;
+    var phone = document.getElementById("c-phone").value.trim();
+    if (name.length < 2 || !/.+@.+\..+/.test(email) || phone.replace(/\D/g, "").length < 6) {
+      status.style.color = "#c2281d"; status.textContent = "Unesite ime, ispravnu email adresu i broj telefona."; return;
     }
     if (document.getElementById("website").value) return;
     var poruka = "Zahtev sa kalkulatora ponude:\n" +
@@ -670,7 +671,7 @@ html,body{overflow-x:hidden;overflow-x:clip}
     fetch("/posalji", {
       method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: name, email: email, phone: document.getElementById("c-phone").value.trim(),
+        name: name, email: email, phone: phone,
         service: tip.service || "other", deadline: rok.deadline || "", budget: bud.budget || "",
         message: poruka, locale: "sr", website: "", company: "", siteurl: "", source: "", turnstile: (document.getElementsByName("cf-turnstile-response")[0]||{}).value||""
       })
